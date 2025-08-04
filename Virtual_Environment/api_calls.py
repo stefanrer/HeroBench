@@ -5,33 +5,6 @@ import requests
 
 # Character Actions
 
-def buy(name: str, code: str, quantity: int = 1) -> tuple[int, dict]:
-    """
-    Buy an item at the grand-exchange tile.
-
-    :param name: str    Character name.
-    :param code: str    Item code.
-    :param quantity: int  Quantity to buy.
-
-    :return: (status_code, response_json)
-    """
-    base_url = "http://127.0.0.1:8000"
-    url = f"{base_url}/my/{name}/action/buy"
-
-    headers = {
-        "Content-Type": "application/json",
-        "Accept": "application/json",
-    }
-
-    payload = {
-        "code": code,
-        "quantity": quantity
-    }
-
-    response = requests.post(url, json=payload, headers=headers)
-    return response.status_code, response.json()
-
-
 def move(name: str, x: int, y: int) -> tuple[int, dict]:
     """
     Moves a character on the map using the map's X and Y position.

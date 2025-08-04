@@ -2,24 +2,28 @@
 ![Virtual Enviroment Map](world_map.png "Virtual Enviroment Map")
 
 ## SQLite Version
-Works slower, localy saves database in artifact.db file![SQLite DB Image](sqlite.png "SQLite DB Image")
+Works slower, localy saves database in artifact.db file
 
 ## Redis Version
-Works faster, needs Redis instance running on port 6379 (linux or WSL)![Redis DB Image](Redis.png "Redis DB Image")
+Works faster, needs Redis instance running on port 6379 (linux or WSL)
 
 # API CALLS Documentation
 
 This document describes all available API calls for interacting with the game server.
+
+---
 
 ## Character Actions
 
 ### MOVE
 Moves a character on the map.
 
-**Params:**
+**Path Params:**
 - `name`: str - Character name
-- `x`: int - X coordinate
-- `y`: int - Y coordinate
+
+**Body Params:**
+- `x`: int - Map X coordinate
+- `y`: int - Map Y coordinate
 
 **URL:** `POST /my/{name}/action/move`
 
@@ -34,7 +38,7 @@ Moves a character on the map.
 ### FIGHT
 Starts a fight against a monster.
 
-**Params:**
+**Path Params:**
 - `name`: str - Character name
 
 **URL:** `POST /my/{name}/action/fight`
@@ -49,9 +53,11 @@ Starts a fight against a monster.
 ### EQUIP
 Equips an item on your character.
 
-**Params:**
+**Path Params:**
 - `name`: str - Character name
-- `slot`: str - Equipment slot
+
+**Body Params:**
+- `slot`: str - Equipment slot (weapon, shield, helmet, body_armor, leg_armor, boots, ring1, ring2, amulet, artifact1, artifact2, artifact3, consumable1, consumable2)
 - `code`: str - Item code
 - `quantity`: int (default=1) - Quantity (for consumables)
 
@@ -74,7 +80,7 @@ Unequips an item from your character.
 
 **Params:**
 - `name`: str - Character name
-- `slot`: str - Equipment slot
+- `slot`: str - Equipment slot (weapon, shield, helmet, body_armor, leg_armor, boots, ring1, ring2, amulet, artifact1, artifact2, artifact3, consumable1, consumable2)
 - `quantity`: int (default=1) - Quantity (for consumables)
 
 **URL:** `POST /my/{name}/action/unequip`
@@ -91,8 +97,10 @@ Unequips an item from your character.
 ### GATHER
 Harvests a resource on the character's map.
 
-**Params:**
+**PathParams:**
 - `name`: str - Character name
+
+**Body Params:**
 - `quantity`: int (default=1) - Quantity to gather
 
 **URL:** `POST /my/{name}/action/gathering`
@@ -108,8 +116,10 @@ Harvests a resource on the character's map.
 ### CRAFT
 Crafts an item (requires workshop).
 
-**Params:**
+**Path Params:**
 - `name`: str - Character name
+
+**Body Params:**
 - `code`: str - Craft code
 - `quantity`: int - Quantity to craft
 
@@ -128,8 +138,10 @@ Crafts an item (requires workshop).
 ### DELETE_ITEM
 Deletes an item from inventory.
 
-**Params:**
+**Path Params:**
 - `name`: str - Character name
+
+**Body Params:**
 - `code`: str - Item code
 - `quantity`: int - Quantity to delete
 
@@ -145,8 +157,10 @@ Deletes an item from inventory.
 ### GIVE_ITEM
 Gives an item to another character.
 
-**Params:**
+**Path Params:**
 - `name`: str - Character name
+
+**Body Params:**
 - `recipient`: str - Recipient name
 - `code`: str - Item code
 - `quantity`: int - Quantity to give
@@ -166,9 +180,9 @@ Gives an item to another character.
 ### get_all_maps
 Fetches all maps details.
 
-**Params:**
-- `content_code`: str (optional) - Content code on map
-- `content_type`: str (optional) - Content type ('monster', 'resource', etc.)
+**Body Params:**
+- `content_code`: str (optional) - Content code
+- `content_type`: str (optional) - Content type (monster, resource, workshop, etc)
 
 **URL:** `GET /maps`
 
@@ -181,9 +195,9 @@ Fetches all maps details.
 ### get_map
 Retrieves details of a specific map.
 
-**Params:**
-- `x`: int - X coordinate
-- `y`: int - Y coordinate
+**Path Params:**
+- `x`: int - Map X coordinate
+- `y`: int - Map Y coordinate
 
 **URL:** `GET /maps/{x}/{y}`
 
@@ -198,11 +212,11 @@ Retrieves details of a specific map.
 ### get_all_resources
 Fetches all resources details.
 
-**Params:**
+**Body Params:**
 - `drop`: str (optional) - Item code of drop
 - `max_level`: int (optional) - Max skill level
 - `min_level`: int (optional) - Min skill level
-- `skill`: str (optional) - Skill code
+- `skill`: str (optional) - Skill code (woodcutting, fishing, mining, etc)
 
 **URL:** `GET /resources`
 
@@ -215,7 +229,7 @@ Fetches all resources details.
 ### get_resource
 Retrieves details of a specific resource.
 
-**Params:**
+**Path Params:**
 - `code`: str - Resource code
 
 **URL:** `GET /resources/{code}`
@@ -231,7 +245,7 @@ Retrieves details of a specific resource.
 ### get_all_monsters
 Fetches all monsters details.
 
-**Params:**
+**Body Params:**
 - `drop`: str (optional) - Item code of drop
 - `max_level`: int (optional) - Max level
 - `min_level`: int (optional) - Min level
@@ -247,7 +261,7 @@ Fetches all monsters details.
 ### get_monster
 Retrieves details of a specific monster.
 
-**Params:**
+**Path Params:**
 - `code`: str - Monster code
 
 **URL:** `GET /monsters/{code}`
@@ -263,9 +277,9 @@ Retrieves details of a specific monster.
 ### get_all_items
 Fetches all items details.
 
-**Params:**
+**Body Params:**
 - `craft_material`: str (optional) - Material item code
-- `craft_skill`: str (optional) - Crafting skill
+- `craft_skill`: str (optional) - Crafting skill (cooking, weaponcrafting, gearcrafting, mining, jewelrycrafting, woodcutting, etc)
 - `max_level`: int (optional) - Max level
 - `min_level`: int (optional) - Min level
 - `name`: str (optional) - Item name
@@ -282,7 +296,7 @@ Fetches all items details.
 ### get_item
 Retrieves details of a specific item.
 
-**Params:**
+**Path Params:**
 - `code`: str - Item code
 
 **URL:** `GET /items/{code}`
@@ -298,7 +312,7 @@ Retrieves details of a specific item.
 ### create_character
 Creates a new character.
 
-**Params:**
+**Body Params:**
 - `name`: str - Character name (3-12 chars, unique)
 - `skin`: str - Skin type
 
@@ -313,7 +327,7 @@ Creates a new character.
 ### create_custom_character
 Creates a custom character.
 
-**Params:**
+**Body Params:**
 - `name`: str - Character name
 - `skin`: str - Skin type
 - `char_data`: Dict - Custom character data
@@ -330,7 +344,7 @@ Creates a custom character.
 ### delete_character
 Deletes a character.
 
-**Params:**
+**Body Params:**
 - `name`: str - Character name
 
 **URL:** `POST /characters/delete`
@@ -355,7 +369,7 @@ Fetches all characters.
 ### get_character
 Retrieves details of a specific character.
 
-**Params:**
+**Path Params:**
 - `name`: str - Character name
 
 **URL:** `GET /characters/{name}`
@@ -371,7 +385,7 @@ Retrieves details of a specific character.
 ### get_logs
 Retrieves the last N logs.
 
-**Params:**
+**Path Params:**
 - `amount`: int (default=100) - Number of logs
 
 **URL:** `GET /logs/{amount}`
@@ -385,7 +399,7 @@ Retrieves the last N logs.
 ### get_character_logs
 Retrieves logs for a specific character.
 
-**Params:**
+**Path Params:**
 - `name`: str - Character name
 - `amount`: int (default=100) - Number of logs
 
