@@ -8,7 +8,7 @@ from sqlmodel import Field, SQLModel, select
 
 from app.db import SessionDep, CharacterLog, ActionType
 from app.routers import error_response, error_info_response
-from app.routers.characters import CharacterResponse, Character, InventorySlot, BlockedHitsResponse, ItemSlot
+from app.routers.characters import CharacterResponse, Character, InventorySlot, BlockedHitsResponse, ItemSlot, DROP_RATE_ENABLED
 from app.routers.items import Item, ItemResponse
 from app.routers.maps import MapResponse, Map, MapContentLink, MapContent, ContentType
 from app.routers.monsters import Monster
@@ -276,13 +276,18 @@ async def action_fight(
                 items = []
                 drops = current_monster.drops
                 for drop in drops:
-                    # drop_chance = 1 / drop.rate
-                    drop_chance = 1  # TODO: remove drop_chance for now
-                    result = random.choices([None, 1], weights=[1 - drop_chance, drop_chance], k=1)[0]
-                    if result:
+                    if DROP_RATE_ENABLED:
+                        drop_chance = 1 / drop.rate
+                        result = random.choices([None, 1], weights=[1 - drop_chance, drop_chance], k=1)[0]
+                        if result:
+                            quantity = random.randint(drop.min_quantity, drop.max_quantity)
+                            character.add_item(session, drop.code, quantity)
+                            items.append(DropResponse(code=drop.code, quantity=quantity))
+                    else:
                         quantity = random.randint(drop.min_quantity, drop.max_quantity)
                         character.add_item(session, drop.code, quantity)
                         items.append(DropResponse(code=drop.code, quantity=quantity))
+
                 fight.drops = items
                 fight.xp = got_xp
                 log = CharacterLog(character_name=character.name, action_type=ActionType.fight,
@@ -347,13 +352,18 @@ async def action_gathering(
                 gather_cycles = quantity
                 while gather_cycles > 0:
                     for drop in drops:
-                        # drop_chance = 1 / drop.rate
-                        drop_chance = 1 # TODO: remove drop_chance for now
-                        result = random.choices([None, 1], weights=[1 - drop_chance, drop_chance], k=1)[0]
-                        if result:
+                        if DROP_RATE_ENABLED:
+                            drop_chance = 1 / drop.rate
+                            result = random.choices([None, 1], weights=[1 - drop_chance, drop_chance], k=1)[0]
+                            if result:
+                                item_quantity = random.randint(drop.min_quantity, drop.max_quantity)
+                                character.add_item(session, drop.code, item_quantity)
+                                items.append(DropResponse(code=drop.code, quantity=item_quantity))
+                        else:
                             item_quantity = random.randint(drop.min_quantity, drop.max_quantity)
                             character.add_item(session, drop.code, item_quantity)
                             items.append(DropResponse(code=drop.code, quantity=item_quantity))
+
                     got_xp = character.increase_skill_xp(session, needed_skill, current_resource.level)
                     total_got_xp += got_xp
                     gather_cycles -= 1

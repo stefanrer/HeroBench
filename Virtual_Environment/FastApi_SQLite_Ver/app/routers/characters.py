@@ -15,6 +15,7 @@ from app.routers.items import Item
 from app.routers.monsters import Monster
 
 BLOCKING_ENABLED: bool = False # TODO: Remove Blocks for Now
+DROP_RATE_ENABLED: bool = False # TODO: Remove Drop rate for Now
 
 class BlockedHitsResponse(SQLModel, ordered=True):
     fire: Annotated[int, Field(description="The amount of fire hits blocked.", default=0)]
