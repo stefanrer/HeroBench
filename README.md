@@ -1,4 +1,4 @@
-# ArtifactsBench: A Benchmark for Long-Horizon Planning and Structured Reasoning in Virtual Worlds
+# HeroBench: A Benchmark for Long-Horizon Planning and Structured Reasoning in Virtual Worlds
 
 [![Python](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.116+-green.svg)](https://fastapi.tiangolo.com/)
@@ -7,7 +7,7 @@
 
 ## Abstract
 
-Large language models (LLMs) have shown remarkable capabilities in isolated step-by-step reasoning tasks such as mathematics and programming, but their proficiency in long-horizon planning, where solutions require extended, structured sequences of interdependent actions, remains underexplored. Existing benchmarks typically assess LLMs through abstract or low-dimensional algorithmic tasks, failing to capture the complexity of realistic planning environments. We introduce ArtifactsBench, a novel benchmark designed specifically to evaluate long-horizon planning and structured reasoning within complex RPG-inspired virtual worlds. ArtifactsBench provides a rigorously constructed dataset of tasks covering a wide range of difficulties, a simulated environment to execute and validate agent plans, and detailed analytical tools for evaluating model performance. Tasks challenge models to formulate strategic plans, efficiently gather resources, master necessary skills, craft equipment, and defeat adversaries, reflecting practical scenarios' layered dependencies and constraints. Our extensive evaluation of 20 state-of-the-art LLMs, including both open-source and proprietary models and agentic architectures, reveals significant performance disparities typically unseen in conventional reasoning benchmarks. Detailed error analysis further uncovers specific weaknesses in current models' abilities to generate robust high-level plans and reliably execute structured actions. ArtifactsBench thus not only significantly advances the evaluation of LLM reasoning but also provides a flexible, scalable foundation for future research into advanced, autonomous planning in virtual environments.
+Large language models (LLMs) have shown remarkable capabilities in isolated step-by-step reasoning tasks such as mathematics and programming, but their proficiency in long-horizon planning, where solutions require extended, structured sequences of interdependent actions, remains underexplored. Existing benchmarks typically assess LLMs through abstract or low-dimensional algorithmic tasks, failing to capture the complexity of realistic planning environments. We introduce HeroBench, a novel benchmark designed specifically to evaluate long-horizon planning and structured reasoning within complex RPG-inspired virtual worlds. HeroBench provides a rigorously constructed dataset of tasks covering a wide range of difficulties, a simulated environment to execute and validate agent plans, and detailed analytical tools for evaluating model performance. Tasks challenge models to formulate strategic plans, efficiently gather resources, master necessary skills, craft equipment, and defeat adversaries, reflecting practical scenarios' layered dependencies and constraints. Our extensive evaluation of 20 state-of-the-art LLMs, including both open-source and proprietary models and agentic architectures, reveals significant performance disparities typically unseen in conventional reasoning benchmarks. Detailed error analysis further uncovers specific weaknesses in current models' abilities to generate robust high-level plans and reliably execute structured actions. HeroBench thus not only significantly advances the evaluation of LLM reasoning but also provides a flexible, scalable foundation for future research into advanced, autonomous planning in virtual environments.
 
 ---
 
@@ -15,7 +15,7 @@ Large language models (LLMs) have shown remarkable capabilities in isolated step
 
 ![Success rate on base tasks](figures/success_rate_improved1.png "Success rate on base tasks")
 
-*Performance comparison across different LLM architectures on ArtifactsBench tasks*
+*Performance comparison across different LLM architectures on HeroBench tasks*
 
 </div>
 
@@ -66,8 +66,8 @@ Large language models (LLMs) have shown remarkable capabilities in isolated step
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/stefanrer/ArtifactsBench
-cd ArtifactsBench
+git clone https://github.com/stefanrer/HeroBench
+cd HeroBench
 ```
 
 ### 2. Set Up the Virtual Environment
@@ -153,7 +153,7 @@ uvicorn main:app --host 127.0.0.1 --port 8000
 ## Project Structure
 
 ```
-ArtifactsBench/
+HeroBench/
 ├── README.md                           # This file
 ├── success_rate_improved1.png          # Benchmark results
 │
@@ -255,7 +255,7 @@ ArtifactsBench/
 
 ### Task Types
 
-ArtifactsBench supports various task types:
+HeroBench supports various task types:
 
 - **Crafting Tasks**: Gather resources and craft items
 - **Combat Tasks**: Navigate to monsters and engage in combat
@@ -283,7 +283,7 @@ For complete API documentation, see [Virtual_Environment/README.md](Virtual_Envi
 
 ## Contributing
 
-We welcome contributions to ArtifactsBench! Here's how you can help:
+We welcome contributions to HeroBench! Here's how you can help:
 
 ### Development Setup
 
@@ -309,11 +309,11 @@ Fill here
 
 ## Citation
 
-If you use ArtifactsBench in your research, please cite our work:
+If you use HeroBench in your research, please cite our work:
 
 ```bibtex
-@article{artifactsbench2025,
-  title={ArtifactsBench: A Benchmark for Long-Horizon Planning and Structured Reasoning in Virtual Worlds},
+@article{HeroBench2025,
+  title={HeroBench: A Benchmark for Long-Horizon Planning and Structured Reasoning in Virtual Worlds},
   author={Your Name and Co-authors},
   journal={arXiv preprint},
   year={2025}
