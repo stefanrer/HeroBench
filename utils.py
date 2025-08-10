@@ -1,20 +1,22 @@
 import os
 import re
 import json
-
+import importlib
 from Virtual_Environment.api_calls import*
 import threading
 from typing import Tuple, Optional
 
 import multiprocessing
 import traceback
-from collections import deque
 from typing import Dict, List, Any
 from collections import defaultdict
 from pathlib import Path
 
 import crafting_tree as ct       
 import io, contextlib, traceback
+
+import multiprocessing as mp
+import traceback, contextlib, io
 
 
 
@@ -343,95 +345,91 @@ def compute_ideal_episode_reward(task: dict) -> tuple[int, dict[str,int]]:
     return total, dict(breakdown)
 
 
-def _worker(code_str, globals_, locals_, q):
-    """
-    Executes `code_str` and returns a dict through q with:
-      • 'trace'        – full traceback of a top‑level crash (or None)
-      • 'func_errors'  – list of dicts, one per failed API call
-      • 'stdout'       – what the program printed to stdout
-      • 'stderr'       – what the program printed to stderr
-    """
-    func_errors = []
-
-    # ---------------------------------------------------------------- wrapper --
-    def _wrap(fn, name):
-        def wrapped(*args, **kwargs):
-            try:
-                res = fn(*args, **kwargs)
-            except Exception as exc:
-                # real exception inside the API call
-                func_errors.append({
-                    "func":    name,
-                    "args":    repr(args),
-                    "kwargs":  repr(kwargs),
-                    "error":   repr(exc),
-          #          "trace":   traceback.format_exc()
-                })
-                raise  # re‑raise so the exec() sees it, if you want to abort
-            # now check for a “benign” error return from the API
-            if isinstance(res, tuple) \
-            and len(res) == 2 \
-            and isinstance(res[1], dict) \
-            and "error" in res[1]:
-                err = res[1]["error"]
-                func_errors.append({
-                    "func":       name,
-                    "args":       repr(args),
-                    "kwargs":     repr(kwargs),
-                    "error_code": err.get("code"),
-                    "message":    err.get("message"),
-                    # this shows the *call site* in the user code
-                #    "trace":      "".join(traceback.format_stack())
-                })
-                # OPTION A: abort user code right here
-                # raise RuntimeError(f"{name} API error {err!r}")
-                # OPTION B: swallow and let code continue
-            return res
-        return wrapped
-
-    # then monkey‑patch exactly as before:
-    for name in _API_TO_WRAP:
-        if name in globals_:
-            globals_[name] = _wrap(globals_[name], name)
-
-    # also capture stdout / stderr so nothing is lost
-    stdout, stderr = io.StringIO(), io.StringIO()
-    with contextlib.redirect_stdout(stdout), contextlib.redirect_stderr(stderr):
-        top_trace = None
+def _wrap_api(globs, func_name, func):
+    def wrapped(*args, **kwargs):
         try:
-            exec(code_str, globals_, locals_)
+            res = func(*args, **kwargs)
+        except Exception as exc:
+            _WORKER_STATE["func_errors"].append({
+                "func": func_name,
+                "args": repr(args),
+                "kwargs": repr(kwargs),
+                "error": repr(exc),
+            })
+            raise
+        if isinstance(res, tuple) and len(res) == 2 and isinstance(res[1], dict) and "error" in res[1]:
+            err = res[1]["error"]
+            _WORKER_STATE["func_errors"].append({
+                "func": func_name,
+                "args": repr(args),
+                "kwargs": repr(kwargs),
+                "error_code": err.get("code"),
+                "message": err.get("message"),
+            })
+        return res
+    globs[func_name] = wrapped
+
+# per-process storage (created inside child)
+_WORKER_STATE = {"func_errors": []}
+
+def _worker(code_str: str, sandbox: dict, q):
+    global _WORKER_STATE
+    _WORKER_STATE = {"func_errors": []}
+
+    # Build the child's globals from scratch
+    g = {"__name__": "__main__"}
+    g.update(sandbox or {})
+
+    api = importlib.import_module("Virtual_Environment.api_calls")
+
+    # Wrap only the functions you care about and inject into the child globals
+    for name in _API_TO_WRAP:
+        if hasattr(api, name):
+            fn = getattr(api, name)
+            _wrap_api(g, name, fn)   # puts the wrapped fn at g[name]
+
+    stdout, stderr = io.StringIO(), io.StringIO()
+    top_trace = None
+    with contextlib.redirect_stdout(stdout), contextlib.redirect_stderr(stderr):
+        try:
+            exec(code_str, g, {})
         except Exception:
             top_trace = traceback.format_exc()
 
-    # everything that the parent process needs is serialised through the Queue
     q.put({
-        "trace":        top_trace,
-        "func_errors":  func_errors,
-        "stdout":       stdout.getvalue(),
-        "stderr":       stderr.getvalue(),
+        "trace":       top_trace,
+        "func_errors": _WORKER_STATE["func_errors"],
+        "stdout":      stdout.getvalue(),
+        "stderr":      stderr.getvalue(),
     })
 
-def safe_exec(code: str, globals_=None, locals_=None, timeout: float = 5.0):
-    globals_ = globals_ or {}
-    locals_  = locals_  or {}
-    q = multiprocessing.Queue()
-    p = multiprocessing.Process(target=_worker, args=(code, globals_, locals_, q))
+def safe_exec(code: str, sandbox: dict | None = None, timeout: float = 5.0):
+    ctx = mp.get_context("spawn")           # explicit
+    q = ctx.SimpleQueue()                   # simpler than Queue on Windows
+    p = ctx.Process(target=_worker, args=(code, sandbox or {}, q), daemon=False)
     p.start()
-    p.join(timeout)
 
-    if p.is_alive():
-        p.terminate()
-        raise TimeoutError(f"Code execution exceeded {timeout} seconds")
-
-    run_info = q.get()          # <-- dict produced above
-
-    # if you still want the old behaviour, re‑raise *after* capturing
-    if run_info["trace"]:
-        raise RuntimeError(f"Top‑level error:\n{run_info['trace']}")
-
-    return run_info             # {'trace': None, 'func_errors': [...], ...}
-
-
+    try:
+        p.join(timeout)
+        if p.is_alive():
+            p.terminate()
+            p.join(2)
+            raise TimeoutError(f"Code execution exceeded {timeout} seconds")
+        if q.empty():
+            return {"trace": None, "func_errors": [], "stdout": "", "stderr": ""}
+        run_info = q.get()
+        if run_info.get("trace"):
+            # Re-raise after capturing
+            raise RuntimeError(f"Top-level error:\n{run_info['trace']}")
+        return run_info
+    finally:
+        # Defensive cleanup
+        try:
+            while not q.empty():
+                q.get_nowait()
+        except Exception:
+            pass
+        q.close()
 
 def extract_character_stats(text):
     # Use regex to find the dictionary that starts with {'name': and ends with }

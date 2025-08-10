@@ -1,32 +1,41 @@
 
 """
-One-pass scorer + stats generator.
+Scoring and statistics generator for model-produced code execution logs.
 
-Usage examples:
-  # Do everything (default): score all code_logs and then build stats
+This script automates two main stages in one pass or separately:
+
+1. **Scoring** — Executes and evaluates code samples from model-generated logs
+   against predefined tasks, recording outcomes, rewards, and execution errors.
+   Produces `<prefix>_scores.json` files summarizing per-task and per-sample results.
+
+2. **Statistics** — Aggregates `_scores.json` data into high-level performance
+   metrics per difficulty level and overall. Tracks execution error patterns,
+   crafting failures, missing actions, and win rates, producing `<prefix>_stats.json`.
+
+Typical usage:
+  # Run both scoring and statistics (default)
   python score_and_stats.py
 
   # Only scoring
   python score_and_stats.py --mode scoring
 
-  # Only stats (reads *_scores.json from --output_dir or a custom --stats_input)
+  # Only statistics (reads *_scores.json from --output_dir or custom --stats_input)
   python score_and_stats.py --mode stats
 
-  # Score a specific file and then stats
-  python score_and_stats.py --code_logs_file results/results_final/gpt41_code_logs.json
-
-Key args (same defaults as your originals):
-  --tasks_path           datasets/dataset_tasks.json
-  --prompts_path         datasets/dataset_prompts.json
-  --code_logs_dir        results/results_final
-  --output_dir           results/results_scoring
-  --skip_existing        (flag) skip existing *_scores.json
-  --diff_start/end/step  1/9/1
-  --diff_custom          e.g. "1,3,5"
-  --task_num             "all"
-  --timeout              100
-  --cutoff_actions       4000
-  --stats_input          path (file or dir); default = --output_dir
+Key arguments (defaults match original pipeline):
+  --tasks_path           Path to dataset_tasks.json
+  --prompts_path         Path to dataset_prompts.json
+  --code_logs_file       Path to a single code_logs JSON for scoring;
+                         leave unset to process all matching files in --code_logs_dir
+  --code_logs_dir        Directory containing model code_logs*.json
+  --output_dir           Where to write *_scores.json and *_stats.json
+  --skip_existing        Skip scoring if output already exists
+  --diff_start/end/step  Difficulty range (default: 1–9)
+  --diff_custom          Comma-separated difficulty list (overrides range)
+  --task_num             'all' or specific task index
+  --timeout              Code execution timeout (seconds)
+  --cutoff_actions       Max number of logged actions per run
+  --stats_input          File or directory to read *_scores.json from
 """
 
 import os
@@ -164,7 +173,9 @@ def make_scores(
                 for s, code in enumerate(codes):
                     try:
                         create_character('Hero', prompt)
-                        run_info = safe_exec(code, globals(), locals(), timeout=timeout)
+                        sandbox = {"__name__": "__main__"}  # add exports you actually need
+                        run_info = safe_exec(code, sandbox=sandbox, timeout=timeout)
+                        #run_info = safe_exec(code, globals(), locals(), timeout=timeout)
                         logs = cut_events_before_creation(get_character_logs('Hero', cutoff_actions))
                         raw_errors  = run_info.get('func_errors', [])
                         func_errors = squash_consecutive_errors(
@@ -479,7 +490,7 @@ def parse_args():
     p.add_argument("--prompts_path", default="datasets/dataset_prompts.json")
     p.add_argument("--code_logs_file", default='results/results_hard/gpt-5_level_code_logs.json')
     p.add_argument("--code_logs_dir", default="results/results_base")
-    p.add_argument("--output_dir", default="results/results_scoring")
+    p.add_argument("--output_dir", default="results/results_hard_scoring")
     p.add_argument("--skip_existing", action="store_true")
     p.add_argument("--diff_start", type=int, default=1)
     p.add_argument("--diff_end", type=int, default=9)
@@ -525,4 +536,5 @@ def main():
         make_stats(stats_input=stats_input, tasks_path=Path(args.tasks_path))
 
 if __name__ == "__main__":
+    mp.freeze_support()
     main()
