@@ -1,0 +1,166 @@
+{
+  "9": {
+    "1_Ogre_kill": {
+      "difficulty": 83,
+      "results": [
+        "win"
+      ],
+      "tokens": [
+        39202
+      ],
+      "rewards": [
+        32
+      ],
+      "ideal_rewards": [
+        32
+      ],
+      "scores": [
+        100.0
+      ]
+    },
+    "2_Reaper_kill": {
+      "difficulty": 83,
+      "results": [
+        "lose"
+      ],
+      "tokens": [
+        40945
+      ],
+      "rewards": [
+        36
+      ],
+      "ideal_rewards": [
+        41
+      ],
+      "scores": [
+        87.8048780487805
+      ]
+    },
+    "3_Reaper_kill": {
+      "difficulty": 83,
+      "results": [
+        "win"
+      ],
+      "tokens": [
+        39374
+      ],
+      "rewards": [
+        37
+      ],
+      "ideal_rewards": [
+        37
+      ],
+      "scores": [
+        100.0
+      ]
+    },
+    "4_Cultist Emperor_kill": {
+      "difficulty": 84,
+      "results": [
+        "lose"
+      ],
+      "tokens": [
+        36741
+      ],
+      "rewards": [
+        22
+      ],
+      "ideal_rewards": [
+        39
+      ],
+      "scores": [
+        56.41025641025641
+      ]
+    },
+    "5_Reaper_kill": {
+      "difficulty": 84,
+      "results": [
+        "lose"
+      ],
+      "tokens": [
+        36336
+      ],
+      "rewards": [
+        35
+      ],
+      "ideal_rewards": [
+        39
+      ],
+      "scores": [
+        89.74358974358974
+      ]
+    },
+    "6_Cultist Emperor_kill": {
+      "difficulty": 85,
+      "results": [
+        "lose"
+      ],
+      "tokens": [
+        34846
+      ],
+      "rewards": [
+        31
+      ],
+      "ideal_rewards": [
+        39
+      ],
+      "scores": [
+        79.48717948717949
+      ]
+    },
+    "7_Cultist Emperor_kill": {
+      "difficulty": 85,
+      "results": [
+        "lose"
+      ],
+      "tokens": [
+        38195
+      ],
+      "rewards": [
+        25
+      ],
+      "ideal_rewards": [
+        42
+      ],
+      "scores": [
+        59.523809523809526
+      ]
+    },
+    "8_Lich_kill": {
+      "difficulty": 86,
+      "results": [
+        "lose"
+      ],
+      "tokens": [
+        45345
+      ],
+      "rewards": [
+        36
+      ],
+      "ideal_rewards": [
+        40
+      ],
+      "scores": [
+        90.0
+      ]
+    },
+    "9_Lich_kill": {
+      "difficulty": 86,
+      "results": [
+        "lose"
+      ],
+      "tokens": [
+        34869
+      ],
+      "rewards": [
+        17
+      ],
+      "ideal_rewards": [
+        40
+      ],
+      "scores": [
+        42.5
+      ]
+    }
+  }
+}
