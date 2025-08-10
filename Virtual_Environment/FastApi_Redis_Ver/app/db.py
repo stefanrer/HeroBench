@@ -26,6 +26,8 @@ class ActionType(str, Enum):
     craft = "craft"
     delete_item = "delete_item"
     give_item = "give_item"
+    buy_item = "buy_item"
+
 
 class LogRedis(BaseModel):
     character_name: Annotated[str, Field(description="character name")]

@@ -10,7 +10,7 @@ from app.routers.backend.monsters_redis import get_monster_from_redis
 from app.routers.backend.response_models import CharacterResponseRedis, CharacterMovementDataResponseRedis, \
     SkillResponseRedis, CharacterFightDataRedis, ItemRedis, MonsterRedis, EquipRequestResponseRedis, ItemSlot, \
     DeleteItemResponseRedis, InventorySlotResponseRedis, GivenItemResponseRedis, CharacterFightsDataRedis, \
-    FightResponseRedis
+    FightResponseRedis, BuyResponseRedis, SimpleItemResponseRedis
 from app.routers.characters import get_character_redis
 from app.routers.items import get_item_from_redis
 from app.routers.maps import MapRedis, get_map_from_redis
@@ -224,6 +224,56 @@ async def action_crafting(
         await update_redis.add_craft_failure_log(log_text)
 
         return error_info_response(500, info)
+
+
+@router.post(
+    name="Action Buy Item",
+    path="/my/{name}/action/buy",
+    tags=["My characters"],
+    response_model=BuyResponseRedis,
+    description="Buy an item at a grand-exchange tile.",
+    response_description="Item successfully purchased and added to inventory.",
+    responses={
+        404: {"description": "Item not found."},
+        486: {"description": "Redis Error."},
+        498: {"description": "Character not found."},
+        598: {"description": "Grand-exchange not found on this map."},
+    },
+)
+async def action_buy(
+        redis: RedisDep,
+        name: Annotated[
+            str, Path(description="Name of your character.", regex=r'^[a-zA-Z0-9_-]+$')
+        ],
+        code: Annotated[
+            str, Body(description="Item code.", regex=r'^[a-zA-Z0-9_-]+$')
+        ],
+        quantity: Annotated[
+            int, Body(description="Quantity of items to buy.", ge=1)
+        ] = 1,
+):
+    character: Optional[CharacterResponseRedis] = await get_character_redis(redis, name)
+    if not character:
+        return error_response(498, "Character not found.")
+
+    current_map: Optional[MapRedis] = await get_map_from_redis(redis, character.x, character.y)
+    if not current_map or not current_map.content or not current_map.content.type == "grand_exchange":
+        return error_response(598, "Grand-exchange not found on this map.")
+
+    current_item: Optional[ItemRedis] = await get_item_from_redis(redis, code)
+    if not current_item:
+        return error_response(404, "Item not found.")
+
+    update_redis = CharacterUpdateRedis(redis, character)
+    bought = await update_redis.buy_item(current_item, quantity)
+
+    if not bought or not await update_redis.update_redis():
+        return error_response(486, "Redis Error.")
+
+    return BuyResponseRedis(
+        item=SimpleItemResponseRedis(code=current_item.code, quantity=quantity),
+        character=update_redis.changed_character
+    )
 
 
 @router.post(

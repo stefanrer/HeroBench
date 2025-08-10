@@ -229,6 +229,10 @@ class SimpleItemResponseRedis(BaseModel):
     code: Annotated[str, Field(description="The code of the item.")]
     quantity: Annotated[int, Field(description="The quantity of the item.")]
 
+class BuyResponseRedis(BaseModel):
+    item: Annotated[SimpleItemResponseRedis, Field(description="Item details.")]
+    character: Annotated[CharacterResponseRedis, Field(description="Character details.")]
+
 class DeleteItemResponseRedis(BaseModel):
     item: Annotated[SimpleItemResponseRedis, Field(description="Item details.")]
     character: Annotated[CharacterResponseRedis, Field(description="Character details.")]

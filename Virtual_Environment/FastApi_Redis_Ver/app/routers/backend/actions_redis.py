@@ -228,6 +228,11 @@ class CharacterUpdateRedis:
             print(e)
             return None, False
 
+    async def buy_item(self, buy_item: ItemRedis, buy_quantity: int = 1) -> bool:
+        await self.add_item(buy_item.code, buy_quantity)
+        await create_log(redis=self.redis, character_name=self.character_name, action=ActionType.buy_item, log=f"{self.changed_character.name} purchased {buy_item.code} x{buy_quantity}.")
+        return True
+
     async def add_craft_failure_log(self, log_text: str):
         await create_log(redis=self.redis, character_name=self.character_name, action=ActionType.craft, log=log_text)
 
