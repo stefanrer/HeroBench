@@ -174,7 +174,7 @@ class ItemRedis(BaseModel):
     subtype: str
     description: str
     effects: List[ItemEffectRedis] = []
-    craft: ItemCraftRedis = None
+    craft: Optional[ItemCraftRedis] = None
 
 # Endpoints
 class CharacterMovementDataResponseRedis(BaseModel):
