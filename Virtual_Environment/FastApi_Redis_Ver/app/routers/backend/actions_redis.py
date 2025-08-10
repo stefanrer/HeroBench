@@ -173,8 +173,10 @@ class CharacterUpdateRedis:
                 gather_cycles -= 1
 
             skill_info = SkillInfoResponseRedis(skill=resource.skill , xp=total_got_xp, items=items)
+            drop_codes = [drop.code for drop in resource.drops]
+            drop_codes_str = ', '.join(drop_codes)
             await create_log(self.redis, self.character_name, ActionType.gather,
-                             f"{self.character_name} gather resource {resource.name} with the skill {resource.skill} x{quantity} times.")
+                             f"{self.changed_character.name} gathered resources {drop_codes_str} with the skill {resource.skill} x{quantity} times.")
             return skill_info, True
         except Exception as e:
             print(e)
@@ -441,7 +443,7 @@ class CharacterUpdateRedis:
                 fight.drops = items
                 fight.xp = got_xp
                 await create_log(redis=self.redis, character_name=self.character_name, action=ActionType.fight,
-                                   log=f"{self.character_name} won his fight against {monster.name}.")
+                                   log=f"{self.character_name} win his fight against {monster.name}.")
             else:
                 await create_log(redis=self.redis, character_name=self.character_name, action=ActionType.fight,
                                    log=f"{self.character_name} lost his fight against {monster.name}.")
