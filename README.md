@@ -50,10 +50,10 @@ Large language models (LLMs) have shown remarkable capabilities in isolated step
 - Character progression and inventory systems
 
 ### 🤖 **Advanced Agent System**
-- Fill here
-- 
-- 
-- 
+- **Multi-Agent Architecture**: Sophisticated system with specialized agents for different responsibilities
+- **A1 Agent**: Hierarchical LLM agent with task decomposition and critic evaluation
+- **A2 Agent**: Enhanced agent system using taskgen-ai framework with curriculum, decomposer, and action agents
+- **Specialized Expert Agents**: Craft expert, map expert, and fight analytic agents for domain-specific knowledge
 
 ## Quick Start
 
@@ -137,7 +137,7 @@ uvicorn main:app --host 127.0.0.1 --port 8000
 - `python-dotenv==1.0.1` - Environment variable management
 - `strictjson==6.1.1` - Structured JSON output from LLMs
 
-#### A2 Agent Dependecies
+#### A2 Agent Dependencies
 - `taskgen-ai==4.0.1` - Main framework used to build A2 agentic system
 - `openai==1.59.9` - OpenAI API client
 - `python-dotenv==1.0.1` - Environment variable management
@@ -155,7 +155,8 @@ uvicorn main:app --host 127.0.0.1 --port 8000
 ```
 HeroBench/
 ├── README.md                           # This file
-├── success_rate_improved1.png          # Benchmark results
+├── figures/                            # Images and visualizations
+│   └── success_rate_improved1.png     # Benchmark results
 │
 ├── A1_Agent/                           # Hierarchical LLM agent system
 │   ├── agent.py                        # Main A1Agent implementation

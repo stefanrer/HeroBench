@@ -511,7 +511,6 @@ class BuyResponse(SQLModel, ordered=True):
     response_description="Item successfully purchased and added to inventory.",
     responses={
         404: {"description": "Item not found."},
-        478: {"description": "Quantity must be at least 1."},
         498: {"description": "Character not found."},
         598: {"description": "Grand-exchange not found on this map."},
     },
@@ -522,27 +521,20 @@ async def action_buy(
         code: Annotated[str, Body(description="Item code.", regex=r'^[a-zA-Z0-9_-]+$')],
         quantity: Annotated[int, Body(description="Quantity to buy.", ge=1)] = 1,
 ):
-    # ─── 1 locate the character ────────────────────────────────────────────────
     character = session.exec(select(Character).filter_by(name=name)).first()
     if not character:
         return error_response(498, "Character not found.")
 
-    # ─── 2 verify the tile contains a grand-exchange ───────────────────────────
     current_map = session.exec(select(Map).filter_by(x=character.x, y=character.y)).first()
     if not current_map or not current_map.content or current_map.content.type != "grand_exchange":
         return error_response(598, "Grand-exchange not found on this map.")
 
-    # ─── 3 validate the item ───────────────────────────────────────────────────
     item = session.exec(select(Item).filter_by(code=code)).first()
     if not item:
         return error_response(404, "Item not found.")
 
-    # (Optional) add price / currency checks here
-
-    # ─── 4 grant the item ──────────────────────────────────────────────────────
     character.add_item(session, item.code, quantity)
 
-    # ─── 5 log & commit ────────────────────────────────────────────────────────
     log = CharacterLog(character_name=character.name,
                        action_type=ActionType.buy_item,
                        log=f"{character.name} purchased {item.code} x{quantity}.")
@@ -553,7 +545,6 @@ async def action_buy(
         item=SimpleItemResponse(code=item.code, quantity=quantity),
         character=character
     )
-
 
 
 class DeleteItemResponse(SQLModel, ordered=True):

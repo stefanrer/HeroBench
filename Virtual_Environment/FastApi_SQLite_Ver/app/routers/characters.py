@@ -57,10 +57,6 @@ with open("app/Data/items.json") as j_file:
 router = APIRouter()
 
 def calculate_skill_max_xp(level: int) -> int:
-    """
-    XP required to go from <level> to <level+1>.
-    Starts at 150 for level 1→2, and increases by +10 each level.
-    """
     return 150 + (level - 1) * 10
 
 class CharacterInventoryLink(SQLModel, table=True):
@@ -141,21 +137,15 @@ class Character(SQLModel, table=True):
 
     @staticmethod
     def skill_xp_gain(action_level: int, character_skill_level: int, modifier: int = 1) -> int:
-        """
-        Always award 20 XP (×modifier), unless skill is >10 levels above the action.
-        """
         if character_skill_level > action_level + 10:
             return 0
         return 50 * modifier
 
     def increase_skill_xp(self, session: Session, skill: str, action_level: int, modifier: int = 1) -> int:
-        """
-        Add XP to <skill> (e.g. 'mining'), level up if threshold reached.
-        """
-        current_xp     = getattr(self, f"{skill}_xp")
-        current_level  = getattr(self, f"{skill}_level")
-        xp_gain        = self.skill_xp_gain(action_level, current_level, modifier)
-        new_xp         = current_xp + xp_gain
+        current_xp = getattr(self, f"{skill}_xp")
+        current_level = getattr(self, f"{skill}_level")
+        xp_gain = self.skill_xp_gain(action_level, current_level, modifier)
+        new_xp = current_xp + xp_gain
         new_xp, new_lv, new_thr = self.level_up_skill(new_xp, current_level, getattr(self, f"{skill}_max_xp"))
         setattr(self, f"{skill}_xp",      new_xp)
         setattr(self, f"{skill}_level",   new_lv)
@@ -166,12 +156,8 @@ class Character(SQLModel, table=True):
 
     @staticmethod
     def level_up_skill(xp: int, level: int, threshold: int) -> tuple[int,int,int]:
-        """
-        While XP ≥ threshold and level < 40, consume threshold, bump level,
-        recalc new threshold via global calculate_skill_max_xp().
-        """
         while level < 40 and xp >= threshold:
-            xp    -= threshold
+            xp -= threshold
             level += 1
             threshold = calculate_skill_max_xp(level)
         return xp, level, threshold

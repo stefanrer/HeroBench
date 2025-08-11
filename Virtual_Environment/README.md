@@ -186,6 +186,26 @@ Crafts an item (requires workshop).
 
 ---
 
+### BUY_ITEM
+Buy an item at the grand-exchange tile.
+
+**Path Params:**
+- `name`: str - Character name
+
+**Body Params:**
+- `code`: str - Item code
+- `quantity`: int - Quantity to buy
+
+**URL:** `POST /my/{name}/action/buy`
+
+**Response Codes:**
+- 200: Item bought successfully
+- 404: Item not found
+- 498: Character not found
+- 598: Grand-exchange not found on this map
+
+---
+
 ### DELETE_ITEM
 Deletes an item from inventory.
 

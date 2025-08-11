@@ -118,10 +118,6 @@ class CharacterUpdateRedis:
     @staticmethod
     async def level_up_skill(skill_xp: int, skill_level: int, skill_max_xp: int):
         async def calculate_skill_max_xp(skill_current_level: int):
-            """
-            XP required to go from <level> to <level+1>.
-            Starts at 150 for level 1→2, and increases by +10 each level.
-            """
             return 150 + (skill_current_level - 1) * 10
 
         while skill_level < 40 and skill_xp >= skill_max_xp:
@@ -132,9 +128,6 @@ class CharacterUpdateRedis:
 
     @staticmethod
     async def skill_xp_gain(action_level: int, character_skill_level: int, modifier: int = 1):
-        """
-        Always award 20 XP (×modifier), unless skill is >10 levels above the action.
-        """
         if character_skill_level > action_level + 10:
             return 0
         return 50 * modifier

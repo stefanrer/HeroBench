@@ -31,7 +31,7 @@ A2 Agent is modification of A1 agent. The main principle of the design was to ad
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/stefanrer/ArtifactsBench
+   git clone https://github.com/stefanrer/HeroBench
    cd A2_Agent
    ```
 

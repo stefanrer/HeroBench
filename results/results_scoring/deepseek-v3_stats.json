@@ -1,0 +1,231 @@
+{
+  "1": {
+    "execution_errors": {
+      "total": 5,
+      "by_func": {
+        "craft": 5
+      },
+      "craft_reasons": {
+        "enough_items_for_craft": 5
+      }
+    },
+    "craft_missing_not_attempted": 0,
+    "tasks_with_only_failed_gear_calculation": 0.15,
+    "tasks_failed_total": 0.5,
+    "tasks_with_both_calc_craft": 0.0,
+    "tasks_with_only_failed_craft": 0.25,
+    "tasks_with_wrong_code_format": 0.0,
+    "tasks_other": 0.1,
+    "win_tasks": 10
+  },
+  "2": {
+    "execution_errors": {
+      "total": 18,
+      "by_func": {
+        "craft": 11,
+        "move": 2,
+        "equip": 3,
+        "gather": 2
+      },
+      "craft_reasons": {
+        "enough_items_for_craft": 11
+      }
+    },
+    "craft_missing_not_attempted": 15,
+    "tasks_with_only_failed_gear_calculation": 0.3,
+    "tasks_failed_total": 0.85,
+    "tasks_with_both_calc_craft": 0.3,
+    "tasks_with_only_failed_craft": 0.2,
+    "tasks_with_wrong_code_format": 0.05,
+    "tasks_other": 0.0,
+    "win_tasks": 3
+  },
+  "3": {
+    "execution_errors": {
+      "total": 23,
+      "by_func": {
+        "craft": 16,
+        "move": 1,
+        "unequip": 4,
+        "fight": 1,
+        "gather": 1
+      },
+      "craft_reasons": {
+        "enough_items_for_craft": 16
+      }
+    },
+    "craft_missing_not_attempted": 41,
+    "tasks_with_only_failed_gear_calculation": 0.2,
+    "tasks_failed_total": 1.0,
+    "tasks_with_both_calc_craft": 0.8,
+    "tasks_with_only_failed_craft": 0.0,
+    "tasks_with_wrong_code_format": 0.0,
+    "tasks_other": 0.0,
+    "win_tasks": 0
+  },
+  "4": {
+    "execution_errors": {
+      "total": 36,
+      "by_func": {
+        "craft": 25,
+        "unequip": 2,
+        "equip": 5,
+        "fight": 1,
+        "gather": 2,
+        "move": 1
+      },
+      "craft_reasons": {
+        "enough_items_for_craft": 25
+      }
+    },
+    "craft_missing_not_attempted": 62,
+    "tasks_with_only_failed_gear_calculation": 0.05,
+    "tasks_failed_total": 1.0,
+    "tasks_with_both_calc_craft": 0.95,
+    "tasks_with_only_failed_craft": 0.0,
+    "tasks_with_wrong_code_format": 0.0,
+    "tasks_other": 0.0,
+    "win_tasks": 0
+  },
+  "5": {
+    "execution_errors": {
+      "total": 22,
+      "by_func": {
+        "craft": 18,
+        "unequip": 3,
+        "equip": 1
+      },
+      "craft_reasons": {
+        "enough_items_for_craft": 18,
+        "on_workshop_tile": 1
+      }
+    },
+    "craft_missing_not_attempted": 82,
+    "tasks_with_only_failed_gear_calculation": 0.2,
+    "tasks_failed_total": 1.0,
+    "tasks_with_both_calc_craft": 0.75,
+    "tasks_with_only_failed_craft": 0.0,
+    "tasks_with_wrong_code_format": 0.05,
+    "tasks_other": 0.0,
+    "win_tasks": 0
+  },
+  "6": {
+    "execution_errors": {
+      "total": 36,
+      "by_func": {
+        "craft": 27,
+        "unequip": 4,
+        "fight": 2,
+        "equip": 1,
+        "gather": 2
+      },
+      "craft_reasons": {
+        "enough_items_for_craft": 26,
+        "on_workshop_tile": 1
+      }
+    },
+    "craft_missing_not_attempted": 86,
+    "tasks_with_only_failed_gear_calculation": 0.1,
+    "tasks_failed_total": 1.0,
+    "tasks_with_both_calc_craft": 0.85,
+    "tasks_with_only_failed_craft": 0.0,
+    "tasks_with_wrong_code_format": 0.05,
+    "tasks_other": 0.0,
+    "win_tasks": 0
+  },
+  "7": {
+    "execution_errors": {
+      "total": 40,
+      "by_func": {
+        "gather": 3,
+        "craft": 27,
+        "move": 5,
+        "equip": 2,
+        "unequip": 3
+      },
+      "craft_reasons": {
+        "enough_items_for_craft": 27
+      }
+    },
+    "craft_missing_not_attempted": 105,
+    "tasks_with_only_failed_gear_calculation": 0.05,
+    "tasks_failed_total": 1.0,
+    "tasks_with_both_calc_craft": 0.95,
+    "tasks_with_only_failed_craft": 0.0,
+    "tasks_with_wrong_code_format": 0.0,
+    "tasks_other": 0.0,
+    "win_tasks": 0
+  },
+  "8": {
+    "execution_errors": {
+      "total": 22,
+      "by_func": {
+        "craft": 16,
+        "move": 4,
+        "gather": 1,
+        "equip": 1
+      },
+      "craft_reasons": {
+        "on_workshop_tile": 2,
+        "enough_items_for_craft": 16
+      }
+    },
+    "craft_missing_not_attempted": 123,
+    "tasks_with_only_failed_gear_calculation": 0.35,
+    "tasks_failed_total": 1.0,
+    "tasks_with_both_calc_craft": 0.65,
+    "tasks_with_only_failed_craft": 0.0,
+    "tasks_with_wrong_code_format": 0.0,
+    "tasks_other": 0.0,
+    "win_tasks": 0
+  },
+  "9": {
+    "execution_errors": {
+      "total": 44,
+      "by_func": {
+        "craft": 26,
+        "move": 10,
+        "unequip": 2,
+        "gather": 5,
+        "equip": 1
+      },
+      "craft_reasons": {
+        "enough_items_for_craft": 26,
+        "on_workshop_tile": 1
+      }
+    },
+    "craft_missing_not_attempted": 139,
+    "tasks_with_only_failed_gear_calculation": 0.1,
+    "tasks_failed_total": 1.0,
+    "tasks_with_both_calc_craft": 0.9,
+    "tasks_with_only_failed_craft": 0.0,
+    "tasks_with_wrong_code_format": 0.0,
+    "tasks_other": 0.0,
+    "win_tasks": 0
+  },
+  "total": {
+    "execution_errors": {
+      "total": 246,
+      "by_func": {
+        "craft": 171,
+        "move": 23,
+        "equip": 14,
+        "gather": 16,
+        "unequip": 18,
+        "fight": 4
+      },
+      "craft_reasons": {
+        "enough_items_for_craft": 170,
+        "on_workshop_tile": 5
+      }
+    },
+    "craft_missing_not_attempted": 653,
+    "tasks_with_only_failed_gear_calculation": 0.1667,
+    "tasks_failed_total": 0.9278,
+    "tasks_with_both_calc_craft": 0.6833,
+    "tasks_with_only_failed_craft": 0.05,
+    "tasks_with_wrong_code_format": 0.0167,
+    "tasks_other": 0.0111,
+    "win_tasks": 13
+  }
+}

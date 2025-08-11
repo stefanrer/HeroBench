@@ -2,7 +2,7 @@
 
 ## Project Description
 
-A1 Agent is an advanced hierarchical LLM agent system designed for automated task execution in ArtifactsBench environment. The system uses a multi-agent architecture with task decomposition capabilities to handle complex objectives like crafting items and fighting monsters.
+A1 Agent is an advanced hierarchical LLM agent system designed for automated task execution in HeroBench environment. The system uses a multi-agent architecture with task decomposition capabilities to handle complex objectives like crafting items and fighting monsters.
 
 ### Key Features
 
@@ -31,7 +31,7 @@ A1 Agent is an advanced hierarchical LLM agent system designed for automated tas
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/stefanrer/ArtifactsBench
+   git clone https://github.com/stefanrer/HeroBench
    cd A1_Agent
    ```
 

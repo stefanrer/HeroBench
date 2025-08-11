@@ -1,0 +1,2775 @@
+{
+  "1": {
+    "1_Gold_craft": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 2,
+        "ideal_reward": 2,
+        "delta": 0,
+        "failed": {},
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ],
+    "2_Spruce Plank_craft": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 2,
+        "ideal_reward": 2,
+        "delta": 0,
+        "failed": {},
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ],
+    "3_Hardwood Plank_craft": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 3,
+        "ideal_reward": 3,
+        "delta": 0,
+        "failed": {},
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ],
+    "4_Wooden Staff_craft": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 3,
+        "ideal_reward": 3,
+        "delta": 0,
+        "failed": {},
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ],
+    "5_Cultist Emperor_kill": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 4,
+        "ideal_reward": 4,
+        "delta": 0,
+        "failed": {},
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ],
+    "6_Copper Ring_craft": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 3,
+        "ideal_reward": 3,
+        "delta": 0,
+        "failed": {},
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ],
+    "7_Fire Staff_craft": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 4,
+        "ideal_reward": 4,
+        "delta": 0,
+        "failed": {},
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ],
+    "8_Greater Wooden Staff_craft": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 4,
+        "ideal_reward": 4,
+        "delta": 0,
+        "failed": {},
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ],
+    "9_Life Ring_craft": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 5,
+        "ideal_reward": 5,
+        "delta": 0,
+        "failed": {},
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ],
+    "10_Fire Ring_craft": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 5,
+        "ideal_reward": 5,
+        "delta": 0,
+        "failed": {},
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ],
+    "11_Mushstaff_craft": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 6,
+        "ideal_reward": 6,
+        "delta": 0,
+        "failed": {},
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ],
+    "12_Reaper_kill": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 6,
+        "ideal_reward": 6,
+        "delta": 0,
+        "failed": {},
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ],
+    "13_Cultist Emperor_kill": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 10,
+        "ideal_reward": 10,
+        "delta": 0,
+        "failed": {},
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ],
+    "14_Cultist Emperor_kill": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 7,
+        "ideal_reward": 7,
+        "delta": 0,
+        "failed": {},
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ],
+    "15_Cultist Emperor_kill": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 10,
+        "ideal_reward": 10,
+        "delta": 0,
+        "failed": {},
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ],
+    "16_Magic Stone Amulet_craft": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 8,
+        "ideal_reward": 8,
+        "delta": 0,
+        "failed": {},
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ],
+    "17_Cultist Emperor_kill": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 10,
+        "ideal_reward": 10,
+        "delta": 0,
+        "failed": {},
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ],
+    "18_Cow_kill": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 6,
+        "ideal_reward": 6,
+        "delta": 0,
+        "failed": {},
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ],
+    "19_Steel Boots_craft": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 9,
+        "ideal_reward": 9,
+        "delta": 0,
+        "failed": {},
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ],
+    "20_Skull Staff_craft": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 9,
+        "ideal_reward": 9,
+        "delta": 0,
+        "failed": {},
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ]
+  },
+  "2": {
+    "1_Lich_kill": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 8,
+        "ideal_reward": 8,
+        "delta": 0,
+        "failed": {},
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ],
+    "2_Cultist Emperor_kill": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 8,
+        "ideal_reward": 8,
+        "delta": 0,
+        "failed": {},
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ],
+    "3_Bat_kill": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 9,
+        "ideal_reward": 9,
+        "delta": 0,
+        "failed": {},
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ],
+    "4_Vampire_kill": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 9,
+        "ideal_reward": 9,
+        "delta": 0,
+        "failed": {},
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ],
+    "5_Bat_kill": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 10,
+        "ideal_reward": 11,
+        "delta": 1,
+        "failed": {},
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ],
+    "6_Reaper_kill": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 10,
+        "ideal_reward": 11,
+        "delta": 1,
+        "failed": {},
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ],
+    "7_Mushmush_kill": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 11,
+        "ideal_reward": 11,
+        "delta": 0,
+        "failed": {},
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ],
+    "8_Imp_kill": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 11,
+        "ideal_reward": 11,
+        "delta": 0,
+        "failed": {},
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ],
+    "9_Vampire_kill": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 10,
+        "ideal_reward": 10,
+        "delta": 0,
+        "failed": {},
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ],
+    "10_Cultist Emperor_kill": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 13,
+        "ideal_reward": 13,
+        "delta": 0,
+        "failed": {},
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ],
+    "11_Skeleton_kill": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 10,
+        "ideal_reward": 10,
+        "delta": 0,
+        "failed": {},
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ],
+    "12_Wolf_kill": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 10,
+        "ideal_reward": 10,
+        "delta": 0,
+        "failed": {},
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ],
+    "13_Blue Slime_kill": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 11,
+        "ideal_reward": 11,
+        "delta": 0,
+        "failed": {},
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ],
+    "14_Scarecrow_kill": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 13,
+        "ideal_reward": 13,
+        "delta": 0,
+        "failed": {},
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ],
+    "15_Pig_kill": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 14,
+        "ideal_reward": 14,
+        "delta": 0,
+        "failed": {},
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ],
+    "16_Wolf_kill": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 12,
+        "ideal_reward": 12,
+        "delta": 0,
+        "failed": {},
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ],
+    "17_Vampire_kill": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 14,
+        "ideal_reward": 14,
+        "delta": 0,
+        "failed": {},
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ],
+    "18_Cultist Emperor_kill": [
+      {
+        "sample": 0,
+        "outcome": "lose",
+        "win": false,
+        "reward": 12,
+        "ideal_reward": 20,
+        "delta": 8,
+        "failed": {
+          "target_win": 1,
+          "other_monster:death knight": 1,
+          "other_monster:bandit lizard": 1,
+          "other_monster:demon": 1,
+          "obtain_missing:death_knight_sword": 1,
+          "equip_missing:death_knight_sword": 1,
+          "obtain_missing:bandit_armor": 1,
+          "equip_missing:bandit_armor": 1
+        },
+        "func_errors": [
+          {
+            "func": "equip",
+            "args": "('Hero', 'consumable1', 'life_crystal')",
+            "kwargs": "{}",
+            "error_code": 472,
+            "message": "Item is not valid for this slot."
+          }
+        ],
+        "logs_empty": false
+      }
+    ],
+    "19_Cultist Acolyte_kill": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 15,
+        "ideal_reward": 15,
+        "delta": 0,
+        "failed": {},
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ],
+    "20_Death Knight_kill": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 13,
+        "ideal_reward": 13,
+        "delta": 0,
+        "failed": {},
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ]
+  },
+  "3": {
+    "1_Lich_kill": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 15,
+        "ideal_reward": 15,
+        "delta": 0,
+        "failed": {},
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ],
+    "2_Imp_kill": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 15,
+        "ideal_reward": 15,
+        "delta": 0,
+        "failed": {},
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ],
+    "3_Cultist Emperor_kill": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 20,
+        "ideal_reward": 20,
+        "delta": 0,
+        "failed": {},
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ],
+    "4_Reaper_kill": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 15,
+        "ideal_reward": 15,
+        "delta": 0,
+        "failed": {},
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ],
+    "5_Cultist Emperor_kill": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 14,
+        "ideal_reward": 14,
+        "delta": 0,
+        "failed": {},
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ],
+    "6_Pig_kill": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 16,
+        "ideal_reward": 16,
+        "delta": 0,
+        "failed": {},
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ],
+    "7_Reaper_kill": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 10,
+        "ideal_reward": 11,
+        "delta": 1,
+        "failed": {},
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ],
+    "8_Death Knight_kill": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 15,
+        "ideal_reward": 15,
+        "delta": 0,
+        "failed": {},
+        "func_errors": [
+          {
+            "func": "gather",
+            "args": "('Hero',)",
+            "kwargs": "{}",
+            "error_code": 493,
+            "message": "Not skill level required."
+          }
+        ],
+        "logs_empty": false
+      }
+    ],
+    "9_Pig_kill": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 17,
+        "ideal_reward": 17,
+        "delta": 0,
+        "failed": {},
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ],
+    "10_Cultist Emperor_kill": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 19,
+        "ideal_reward": 20,
+        "delta": 1,
+        "failed": {},
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ],
+    "11_Cultist Emperor_kill": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 22,
+        "ideal_reward": 22,
+        "delta": 0,
+        "failed": {},
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ],
+    "12_Bat_kill": [
+      {
+        "sample": 0,
+        "outcome": "lose",
+        "win": false,
+        "reward": 0,
+        "ideal_reward": 14,
+        "delta": 14,
+        "failed": {
+          "target_win": 1,
+          "other_monster:vampire": 1,
+          "other_monster:death knight": 1,
+          "other_monster:imp": 1,
+          "other_monster:demon": 1,
+          "obtain_missing:death_knight_sword": 1,
+          "equip_missing:death_knight_sword": 1,
+          "craft_missing:ruby_ring": 1,
+          "equip_missing:ruby_ring": 1,
+          "craft_intermediate:gold": 1,
+          "craft_intermediate:obsidian": 1,
+          "gather_resource:ruby": 1,
+          "gather_resource:gold_ore": 1,
+          "gather_resource:magical_cure": 1
+        },
+        "func_errors": [],
+        "logs_empty": true
+      }
+    ],
+    "13_Pig_kill": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 19,
+        "ideal_reward": 19,
+        "delta": 0,
+        "failed": {},
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ],
+    "14_Cultist Emperor_kill": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 23,
+        "ideal_reward": 24,
+        "delta": 1,
+        "failed": {},
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ],
+    "15_Bandit Lizard_kill": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 15,
+        "ideal_reward": 15,
+        "delta": 0,
+        "failed": {},
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ],
+    "16_Ogre_kill": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 18,
+        "ideal_reward": 18,
+        "delta": 0,
+        "failed": {},
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ],
+    "17_Death Knight_kill": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 18,
+        "ideal_reward": 18,
+        "delta": 0,
+        "failed": {},
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ],
+    "18_Cultist Emperor_kill": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 23,
+        "ideal_reward": 23,
+        "delta": 0,
+        "failed": {},
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ],
+    "19_Death Knight_kill": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 20,
+        "ideal_reward": 20,
+        "delta": 0,
+        "failed": {},
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ],
+    "20_Lich_kill": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 18,
+        "ideal_reward": 18,
+        "delta": 0,
+        "failed": {},
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ]
+  },
+  "4": {
+    "1_Scarecrow_kill": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 18,
+        "ideal_reward": 18,
+        "delta": 0,
+        "failed": {},
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ],
+    "2_Pig_kill": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 18,
+        "ideal_reward": 18,
+        "delta": 0,
+        "failed": {},
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ],
+    "3_Cultist Acolyte_kill": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 18,
+        "ideal_reward": 18,
+        "delta": 0,
+        "failed": {},
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ],
+    "4_Imp_kill": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 18,
+        "ideal_reward": 18,
+        "delta": 0,
+        "failed": {},
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ],
+    "5_Cultist Acolyte_kill": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 20,
+        "ideal_reward": 21,
+        "delta": 1,
+        "failed": {},
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ],
+    "6_Demon_kill": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 23,
+        "ideal_reward": 23,
+        "delta": 0,
+        "failed": {},
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ],
+    "7_Ogre_kill": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 16,
+        "ideal_reward": 16,
+        "delta": 0,
+        "failed": {},
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ],
+    "8_Mushmush_kill": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 19,
+        "ideal_reward": 19,
+        "delta": 0,
+        "failed": {},
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ],
+    "9_Cultist Emperor_kill": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 23,
+        "ideal_reward": 24,
+        "delta": 1,
+        "failed": {},
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ],
+    "10_Bat_kill": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 24,
+        "ideal_reward": 24,
+        "delta": 0,
+        "failed": {},
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ],
+    "11_Bandit Lizard_kill": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 22,
+        "ideal_reward": 22,
+        "delta": 0,
+        "failed": {},
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ],
+    "12_Cultist Acolyte_kill": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 23,
+        "ideal_reward": 24,
+        "delta": 1,
+        "failed": {},
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ],
+    "13_Bandit Lizard_kill": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 22,
+        "ideal_reward": 22,
+        "delta": 0,
+        "failed": {},
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ],
+    "14_Scarecrow_kill": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 25,
+        "ideal_reward": 25,
+        "delta": 0,
+        "failed": {},
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ],
+    "15_Death Knight_kill": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 19,
+        "ideal_reward": 19,
+        "delta": 0,
+        "failed": {},
+        "func_errors": [
+          {
+            "func": "gather",
+            "args": "('Hero',)",
+            "kwargs": "{}",
+            "error_code": 493,
+            "message": "Not skill level required."
+          }
+        ],
+        "logs_empty": false
+      }
+    ],
+    "16_Skeleton_kill": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 20,
+        "ideal_reward": 20,
+        "delta": 0,
+        "failed": {},
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ],
+    "17_Pig_kill": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 21,
+        "ideal_reward": 21,
+        "delta": 0,
+        "failed": {},
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ],
+    "18_Flying Serpent_kill": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 23,
+        "ideal_reward": 23,
+        "delta": 0,
+        "failed": {},
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ],
+    "19_Ogre_kill": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 21,
+        "ideal_reward": 21,
+        "delta": 0,
+        "failed": {},
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ],
+    "20_Reaper_kill": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 25,
+        "ideal_reward": 25,
+        "delta": 0,
+        "failed": {},
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ]
+  },
+  "5": {
+    "1_Lich_kill": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 25,
+        "ideal_reward": 25,
+        "delta": 0,
+        "failed": {},
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ],
+    "2_Cultist Acolyte_kill": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 27,
+        "ideal_reward": 28,
+        "delta": 1,
+        "failed": {},
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ],
+    "3_Bat_kill": [
+      {
+        "sample": 0,
+        "outcome": "lose",
+        "win": false,
+        "reward": 0,
+        "ideal_reward": 21,
+        "delta": 21,
+        "failed": {
+          "target_win": 1,
+          "other_monster:owlbear": 1,
+          "other_monster:vampire": 1,
+          "other_monster:death knight": 1,
+          "other_monster:bandit lizard": 1,
+          "other_monster:imp": 1,
+          "other_monster:demon": 1,
+          "craft_missing:obsidian_legs_armor": 1,
+          "equip_missing:obsidian_legs_armor": 1,
+          "craft_missing:obsidian_helmet": 1,
+          "equip_missing:obsidian_helmet": 1,
+          "craft_missing:sapphire_ring": 1,
+          "equip_missing:sapphire_ring": 1,
+          "craft_missing:gold_platebody": 1,
+          "equip_missing:gold_platebody": 1,
+          "craft_intermediate:gold": 1,
+          "craft_intermediate:obsidian": 1,
+          "gather_resource:sap": 1,
+          "gather_resource:sapphire": 1,
+          "gather_resource:magical_cure": 1,
+          "gather_resource:gold_ore": 1
+        },
+        "func_errors": [],
+        "logs_empty": true
+      }
+    ],
+    "4_Skeleton_kill": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 23,
+        "ideal_reward": 23,
+        "delta": 0,
+        "failed": {},
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ],
+    "5_Bat_kill": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 25,
+        "ideal_reward": 25,
+        "delta": 0,
+        "failed": {},
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ],
+    "6_Lich_kill": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 26,
+        "ideal_reward": 26,
+        "delta": 0,
+        "failed": {},
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ],
+    "7_Ogre_kill": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 25,
+        "ideal_reward": 25,
+        "delta": 0,
+        "failed": {},
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ],
+    "8_Cultist Emperor_kill": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 26,
+        "ideal_reward": 26,
+        "delta": 0,
+        "failed": {},
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ],
+    "9_Ogre_kill": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 19,
+        "ideal_reward": 19,
+        "delta": 0,
+        "failed": {},
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ],
+    "10_Skeleton_kill": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 25,
+        "ideal_reward": 25,
+        "delta": 0,
+        "failed": {},
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ],
+    "11_Pig_kill": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 24,
+        "ideal_reward": 24,
+        "delta": 0,
+        "failed": {},
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ],
+    "12_Reaper_kill": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 30,
+        "ideal_reward": 30,
+        "delta": 0,
+        "failed": {},
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ],
+    "13_Reaper_kill": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 27,
+        "ideal_reward": 27,
+        "delta": 0,
+        "failed": {},
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ],
+    "14_Flying Serpent_kill": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 26,
+        "ideal_reward": 26,
+        "delta": 0,
+        "failed": {},
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ],
+    "15_Lich_kill": [
+      {
+        "sample": 0,
+        "outcome": "lose",
+        "win": false,
+        "reward": 0,
+        "ideal_reward": 28,
+        "delta": 28,
+        "failed": {
+          "target_win": 1,
+          "other_monster:owlbear": 1,
+          "other_monster:ogre": 1,
+          "other_monster:bandit lizard": 1,
+          "other_monster:death knight": 1,
+          "other_monster:wolf": 1,
+          "other_monster:imp": 1,
+          "other_monster:demon": 1,
+          "craft_missing:lizard_skin_armor": 1,
+          "equip_missing:lizard_skin_armor": 1,
+          "craft_missing:sapphire_amulet": 1,
+          "equip_missing:sapphire_amulet": 1,
+          "craft_missing:obsidian_legs_armor": 1,
+          "equip_missing:obsidian_legs_armor": 1,
+          "craft_missing:dreadful_ring": 1,
+          "equip_missing:dreadful_ring": 1,
+          "craft_intermediate:hardwood_plank": 1,
+          "craft_intermediate:steel": 1,
+          "craft_intermediate:dead_wood_plank": 1,
+          "craft_intermediate:obsidian": 1,
+          "gather_resource:ash_wood": 1,
+          "gather_resource:coal": 1,
+          "gather_resource:birch_wood": 1,
+          "gather_resource:jasper_crystal": 1,
+          "gather_resource:sap": 1,
+          "gather_resource:iron_ore": 1,
+          "gather_resource:sapphire": 1,
+          "gather_resource:dead_wood": 1
+        },
+        "func_errors": [],
+        "logs_empty": true
+      }
+    ],
+    "16_Ogre_kill": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 23,
+        "ideal_reward": 23,
+        "delta": 0,
+        "failed": {},
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ],
+    "17_Lich_kill": [
+      {
+        "sample": 0,
+        "outcome": "lose",
+        "win": false,
+        "reward": 24,
+        "ideal_reward": 31,
+        "delta": 7,
+        "failed": {
+          "target_win": 1,
+          "other_monster:imp": 1,
+          "craft_missing:obsidian_legs_armor": 1,
+          "equip_missing:obsidian_legs_armor": 1,
+          "craft_missing:gold_helm": 1,
+          "equip_missing:gold_helm": 1,
+          "craft_intermediate:obsidian": 1
+        },
+        "func_errors": [
+          {
+            "func": "fight",
+            "args": "('Hero',)",
+            "kwargs": "{}",
+            "error_code": 598,
+            "message": "Monster not found on this map."
+          },
+          {
+            "func": "craft",
+            "args": "('Hero', 'obsidian', 6)",
+            "kwargs": "{}",
+            "error_code": 500,
+            "message": {
+              "errors": {
+                "on_workshop_tile": true,
+                "needed_skill_level": true,
+                "enough_items_for_craft": false
+              },
+              "workshop": {
+                "needed": "(1, 5)",
+                "current": "(1, 5)"
+              },
+              "skill_level": {
+                "skill": "mining",
+                "needed": 30,
+                "current": 31
+              },
+              "missing_items": [
+                {
+                  "code": "piece_of_obsidian",
+                  "needed": 24,
+                  "got": 17
+                }
+              ]
+            }
+          },
+          {
+            "func": "equip",
+            "args": "('Hero', 'helmet', 'gold_helm')",
+            "kwargs": "{}",
+            "error_code": 478,
+            "message": "Missing item or insufficient quantity."
+          }
+        ],
+        "logs_empty": false
+      }
+    ],
+    "18_Vampire_kill": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 25,
+        "ideal_reward": 25,
+        "delta": 0,
+        "failed": {},
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ],
+    "19_Mushmush_kill": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 24,
+        "ideal_reward": 24,
+        "delta": 0,
+        "failed": {},
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ],
+    "20_Scarecrow_kill": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 29,
+        "ideal_reward": 29,
+        "delta": 0,
+        "failed": {},
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ]
+  },
+  "6": {
+    "1_Skeleton_kill": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 25,
+        "ideal_reward": 25,
+        "delta": 0,
+        "failed": {},
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ],
+    "2_Lich_kill": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 31,
+        "ideal_reward": 31,
+        "delta": 0,
+        "failed": {},
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ],
+    "3_Reaper_kill": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 23,
+        "ideal_reward": 24,
+        "delta": 1,
+        "failed": {},
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ],
+    "4_Skeleton_kill": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 25,
+        "ideal_reward": 25,
+        "delta": 0,
+        "failed": {},
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ],
+    "5_Cultist Emperor_kill": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 32,
+        "ideal_reward": 32,
+        "delta": 0,
+        "failed": {},
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ],
+    "6_Flying Serpent_kill": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 28,
+        "ideal_reward": 28,
+        "delta": 0,
+        "failed": {},
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ],
+    "7_Cultist Emperor_kill": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 35,
+        "ideal_reward": 35,
+        "delta": 0,
+        "failed": {},
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ],
+    "8_Bandit Lizard_kill": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 26,
+        "ideal_reward": 26,
+        "delta": 0,
+        "failed": {},
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ],
+    "9_Lich_kill": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 32,
+        "ideal_reward": 32,
+        "delta": 0,
+        "failed": {},
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ],
+    "10_Bat_kill": [
+      {
+        "sample": 0,
+        "outcome": "lose",
+        "win": false,
+        "reward": 12,
+        "ideal_reward": 32,
+        "delta": 20,
+        "failed": {
+          "target_win": 1,
+          "other_monster:owlbear": 1,
+          "other_monster:ogre": 1,
+          "other_monster:death knight": 1,
+          "other_monster:cultist acolyte": 1,
+          "other_monster:skeleton": 1,
+          "other_monster:bandit lizard": 1,
+          "other_monster:demon": 1,
+          "craft_missing:gold_platebody": 1,
+          "equip_missing:gold_platebody": 1,
+          "craft_missing:greater_dreadful_staff": 1,
+          "equip_missing:greater_dreadful_staff": 1,
+          "craft_missing:strangold_legs_armor": 1,
+          "equip_missing:strangold_legs_armor": 1,
+          "craft_missing:lizard_boots": 1,
+          "equip_missing:lizard_boots": 1,
+          "craft_intermediate:strangold": 1,
+          "craft_intermediate:dead_wood_plank": 1,
+          "gather_resource:strange_ore": 1,
+          "gather_resource:dead_wood": 1
+        },
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ],
+    "11_Bat_kill": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 28,
+        "ideal_reward": 28,
+        "delta": 0,
+        "failed": {},
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ],
+    "12_Reaper_kill": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 29,
+        "ideal_reward": 29,
+        "delta": 0,
+        "failed": {},
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ],
+    "13_Pig_kill": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 26,
+        "ideal_reward": 26,
+        "delta": 0,
+        "failed": {},
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ],
+    "14_Ogre_kill": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 27,
+        "ideal_reward": 27,
+        "delta": 0,
+        "failed": {},
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ],
+    "15_Reaper_kill": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 33,
+        "ideal_reward": 33,
+        "delta": 0,
+        "failed": {},
+        "func_errors": [
+          {
+            "func": "equip",
+            "args": "('Hero', 'consumable1', 'life_crystal')",
+            "kwargs": "{}",
+            "error_code": 472,
+            "message": "Item is not valid for this slot."
+          }
+        ],
+        "logs_empty": false
+      }
+    ],
+    "16_Lich_kill": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 36,
+        "ideal_reward": 37,
+        "delta": 1,
+        "failed": {},
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ],
+    "17_Reaper_kill": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 24,
+        "ideal_reward": 24,
+        "delta": 0,
+        "failed": {},
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ],
+    "18_Ogre_kill": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 26,
+        "ideal_reward": 26,
+        "delta": 0,
+        "failed": {},
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ],
+    "19_Bandit Lizard_kill": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 30,
+        "ideal_reward": 30,
+        "delta": 0,
+        "failed": {},
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ],
+    "20_Reaper_kill": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 31,
+        "ideal_reward": 31,
+        "delta": 0,
+        "failed": {},
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ]
+  },
+  "7": {
+    "1_Bandit Lizard_kill": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 23,
+        "ideal_reward": 23,
+        "delta": 0,
+        "failed": {},
+        "func_errors": [
+          {
+            "func": "gather",
+            "args": "('Hero',)",
+            "kwargs": "{}",
+            "error_code": 493,
+            "message": "Not skill level required."
+          }
+        ],
+        "logs_empty": false
+      }
+    ],
+    "2_Cultist Emperor_kill": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 33,
+        "ideal_reward": 33,
+        "delta": 0,
+        "failed": {},
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ],
+    "3_Lich_kill": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 32,
+        "ideal_reward": 32,
+        "delta": 0,
+        "failed": {},
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ],
+    "4_Cultist Emperor_kill": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 32,
+        "ideal_reward": 32,
+        "delta": 0,
+        "failed": {},
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ],
+    "5_Lich_kill": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 35,
+        "ideal_reward": 35,
+        "delta": 0,
+        "failed": {},
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ],
+    "6_Lich_kill": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 36,
+        "ideal_reward": 36,
+        "delta": 0,
+        "failed": {},
+        "func_errors": [
+          {
+            "func": "move",
+            "args": "('Hero', -5, -4)",
+            "kwargs": "{}",
+            "error_code": 490,
+            "message": "Character already at destination."
+          }
+        ],
+        "logs_empty": false
+      }
+    ],
+    "7_Bandit Lizard_kill": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 29,
+        "ideal_reward": 29,
+        "delta": 0,
+        "failed": {},
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ],
+    "8_Cultist Emperor_kill": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 33,
+        "ideal_reward": 33,
+        "delta": 0,
+        "failed": {},
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ],
+    "9_Lich_kill": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 32,
+        "ideal_reward": 35,
+        "delta": 3,
+        "failed": {},
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ],
+    "10_Bat_kill": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 31,
+        "ideal_reward": 31,
+        "delta": 0,
+        "failed": {},
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ],
+    "11_Ogre_kill": [
+      {
+        "sample": 0,
+        "outcome": "lose",
+        "win": false,
+        "reward": 27,
+        "ideal_reward": 30,
+        "delta": 3,
+        "failed": {
+          "target_win": 1,
+          "craft_missing:adventurer_boots": 1,
+          "equip_missing:adventurer_boots": 1
+        },
+        "func_errors": [
+          {
+            "func": "craft",
+            "args": "('Hero', 'adventurer_boots', 1)",
+            "kwargs": "{}",
+            "error_code": 500,
+            "message": {
+              "errors": {
+                "on_workshop_tile": true,
+                "needed_skill_level": true,
+                "enough_items_for_craft": false
+              },
+              "workshop": {
+                "needed": "(3, 1)",
+                "current": "(3, 1)"
+              },
+              "skill_level": {
+                "skill": "gearcrafting",
+                "needed": 15,
+                "current": 21
+              },
+              "missing_items": [
+                {
+                  "code": "wolf_hair",
+                  "needed": 4,
+                  "got": 1
+                }
+              ]
+            }
+          },
+          {
+            "func": "equip",
+            "args": "('Hero', 'boots', 'adventurer_boots')",
+            "kwargs": "{}",
+            "error_code": 478,
+            "message": "Missing item or insufficient quantity."
+          }
+        ],
+        "logs_empty": false
+      }
+    ],
+    "12_Bandit Lizard_kill": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 27,
+        "ideal_reward": 27,
+        "delta": 0,
+        "failed": {},
+        "func_errors": [
+          {
+            "func": "gather",
+            "args": "('Hero',)",
+            "kwargs": "{}",
+            "error_code": 493,
+            "message": "Not skill level required."
+          }
+        ],
+        "logs_empty": false
+      }
+    ],
+    "13_Reaper_kill": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 30,
+        "ideal_reward": 30,
+        "delta": 0,
+        "failed": {},
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ],
+    "14_Ogre_kill": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 32,
+        "ideal_reward": 32,
+        "delta": 0,
+        "failed": {},
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ],
+    "15_Reaper_kill": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 34,
+        "ideal_reward": 34,
+        "delta": 0,
+        "failed": {},
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ],
+    "16_Bat_kill": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 37,
+        "ideal_reward": 37,
+        "delta": 0,
+        "failed": {},
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ],
+    "17_Reaper_kill": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 36,
+        "ideal_reward": 36,
+        "delta": 0,
+        "failed": {},
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ],
+    "18_Ogre_kill": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 26,
+        "ideal_reward": 26,
+        "delta": 0,
+        "failed": {},
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ],
+    "19_Skeleton_kill": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 31,
+        "ideal_reward": 31,
+        "delta": 0,
+        "failed": {},
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ],
+    "20_Reaper_kill": [
+      {
+        "sample": 0,
+        "outcome": "lose",
+        "win": false,
+        "reward": 0,
+        "ideal_reward": 35,
+        "delta": 35,
+        "failed": {
+          "target_win": 1,
+          "other_monster:ogre": 1,
+          "other_monster:vampire": 1,
+          "other_monster:cultist acolyte": 1,
+          "other_monster:bandit lizard": 1,
+          "other_monster:imp": 1,
+          "other_monster:demon": 1,
+          "other_monster:pig": 1,
+          "other_monster:lich": 1,
+          "craft_missing:ancient_jean": 1,
+          "equip_missing:ancient_jean": 1,
+          "craft_missing:obsidian_armor": 1,
+          "equip_missing:obsidian_armor": 1,
+          "craft_missing:gold_shield": 1,
+          "equip_missing:gold_shield": 1,
+          "craft_missing:greater_dreadful_amulet": 1,
+          "equip_missing:greater_dreadful_amulet": 1,
+          "obtain_missing:life_crystal": 1,
+          "equip_missing:life_crystal": 1,
+          "craft_missing:topaz_ring": 1,
+          "equip_missing:topaz_ring": 1,
+          "craft_intermediate:obsidian": 1,
+          "craft_intermediate:dead_wood_plank": 1,
+          "craft_intermediate:strangold": 1,
+          "craft_intermediate:magical_plank": 1,
+          "craft_intermediate:gold": 1,
+          "gather_resource:magic_wood": 1,
+          "gather_resource:ruby": 1,
+          "gather_resource:gold_ore": 1,
+          "gather_resource:strange_ore": 1,
+          "gather_resource:diamond": 1,
+          "gather_resource:topaz": 1,
+          "gather_resource:sapphire": 1,
+          "gather_resource:dead_wood": 1,
+          "gather_resource:magical_cure": 1
+        },
+        "func_errors": [],
+        "logs_empty": true
+      }
+    ]
+  },
+  "8": {
+    "1_Cultist Emperor_kill": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 36,
+        "ideal_reward": 36,
+        "delta": 0,
+        "failed": {},
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ],
+    "2_Cultist Emperor_kill": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 37,
+        "ideal_reward": 37,
+        "delta": 0,
+        "failed": {},
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ],
+    "3_Reaper_kill": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 32,
+        "ideal_reward": 32,
+        "delta": 0,
+        "failed": {},
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ],
+    "4_Reaper_kill": [
+      {
+        "sample": 0,
+        "outcome": "lose",
+        "win": false,
+        "reward": 34,
+        "ideal_reward": 38,
+        "delta": 4,
+        "failed": {
+          "target_win": 1,
+          "other_monster:owlbear": 1,
+          "craft_missing:gold_boots": 1,
+          "equip_missing:gold_boots": 1
+        },
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ],
+    "5_Reaper_kill": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 32,
+        "ideal_reward": 32,
+        "delta": 0,
+        "failed": {},
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ],
+    "6_Cultist Emperor_kill": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 39,
+        "ideal_reward": 39,
+        "delta": 0,
+        "failed": {},
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ],
+    "7_Lich_kill": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 37,
+        "ideal_reward": 37,
+        "delta": 0,
+        "failed": {},
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ],
+    "8_Cultist Emperor_kill": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 37,
+        "ideal_reward": 37,
+        "delta": 0,
+        "failed": {},
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ],
+    "9_Bat_kill": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 36,
+        "ideal_reward": 36,
+        "delta": 0,
+        "failed": {},
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ],
+    "10_Bat_kill": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 37,
+        "ideal_reward": 37,
+        "delta": 0,
+        "failed": {},
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ],
+    "11_Cultist Emperor_kill": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 40,
+        "ideal_reward": 40,
+        "delta": 0,
+        "failed": {},
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ],
+    "12_Bat_kill": [
+      {
+        "sample": 0,
+        "outcome": "lose",
+        "win": false,
+        "reward": 0,
+        "ideal_reward": 38,
+        "delta": 38,
+        "failed": {
+          "target_win": 1,
+          "other_monster:owlbear": 1,
+          "other_monster:ogre": 1,
+          "other_monster:vampire": 1,
+          "other_monster:death knight": 1,
+          "other_monster:cultist acolyte": 1,
+          "other_monster:skeleton": 1,
+          "other_monster:bandit lizard": 1,
+          "other_monster:imp": 1,
+          "other_monster:demon": 1,
+          "other_monster:lich": 1,
+          "craft_missing:gold_platebody": 1,
+          "equip_missing:gold_platebody": 1,
+          "craft_missing:greater_dreadful_staff": 1,
+          "equip_missing:greater_dreadful_staff": 1,
+          "craft_missing:gold_shield": 1,
+          "equip_missing:gold_shield": 1,
+          "craft_missing:strangold_legs_armor": 1,
+          "equip_missing:strangold_legs_armor": 1,
+          "craft_missing:greater_dreadful_amulet": 1,
+          "equip_missing:greater_dreadful_amulet": 1,
+          "craft_missing:lizard_boots": 1,
+          "equip_missing:lizard_boots": 1,
+          "obtain_missing:life_crystal": 1,
+          "equip_missing:life_crystal": 1,
+          "craft_missing:ruby_ring": 1,
+          "equip_missing:ruby_ring": 1,
+          "craft_intermediate:gold": 1,
+          "craft_intermediate:strangold": 1,
+          "craft_intermediate:dead_wood_plank": 1,
+          "craft_intermediate:obsidian": 1,
+          "gather_resource:ruby": 1,
+          "gather_resource:gold_ore": 1,
+          "gather_resource:strange_ore": 1,
+          "gather_resource:diamond": 1,
+          "gather_resource:sapphire": 1,
+          "gather_resource:dead_wood": 1,
+          "gather_resource:magical_cure": 1
+        },
+        "func_errors": [],
+        "logs_empty": true
+      }
+    ],
+    "13_Bat_kill": [
+      {
+        "sample": 0,
+        "outcome": "lose",
+        "win": false,
+        "reward": 19,
+        "ideal_reward": 31,
+        "delta": 12,
+        "failed": {
+          "target_win": 1,
+          "other_monster:owlbear": 1,
+          "other_monster:vampire": 1,
+          "other_monster:bandit lizard": 1,
+          "craft_missing:obsidian_legs_armor": 1,
+          "equip_missing:obsidian_legs_armor": 1,
+          "craft_missing:gold_platebody": 1,
+          "equip_missing:gold_platebody": 1,
+          "craft_missing:sapphire_ring": 1,
+          "equip_missing:sapphire_ring": 1,
+          "craft_missing:lizard_boots": 1,
+          "equip_missing:lizard_boots": 1
+        },
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ],
+    "14_Cultist Emperor_kill": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 39,
+        "ideal_reward": 39,
+        "delta": 0,
+        "failed": {},
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ],
+    "15_Ogre_kill": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 34,
+        "ideal_reward": 34,
+        "delta": 0,
+        "failed": {},
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ],
+    "16_Lich_kill": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 40,
+        "ideal_reward": 40,
+        "delta": 0,
+        "failed": {},
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ],
+    "17_Reaper_kill": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 36,
+        "ideal_reward": 36,
+        "delta": 0,
+        "failed": {},
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ],
+    "18_Bat_kill": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 39,
+        "ideal_reward": 39,
+        "delta": 0,
+        "failed": {},
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ],
+    "19_Cultist Emperor_kill": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 39,
+        "ideal_reward": 39,
+        "delta": 0,
+        "failed": {},
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ],
+    "20_Reaper_kill": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 40,
+        "ideal_reward": 40,
+        "delta": 0,
+        "failed": {},
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ]
+  },
+  "9": {
+    "1_Ogre_kill": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 32,
+        "ideal_reward": 32,
+        "delta": 0,
+        "failed": {},
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ],
+    "2_Reaper_kill": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 41,
+        "ideal_reward": 41,
+        "delta": 0,
+        "failed": {},
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ],
+    "3_Reaper_kill": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 37,
+        "ideal_reward": 37,
+        "delta": 0,
+        "failed": {},
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ],
+    "4_Cultist Emperor_kill": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 39,
+        "ideal_reward": 39,
+        "delta": 0,
+        "failed": {},
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ],
+    "5_Reaper_kill": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 39,
+        "ideal_reward": 39,
+        "delta": 0,
+        "failed": {},
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ],
+    "6_Cultist Emperor_kill": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 39,
+        "ideal_reward": 39,
+        "delta": 0,
+        "failed": {},
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ],
+    "7_Cultist Emperor_kill": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 42,
+        "ideal_reward": 42,
+        "delta": 0,
+        "failed": {},
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ],
+    "8_Lich_kill": [
+      {
+        "sample": 0,
+        "outcome": "lose",
+        "win": false,
+        "reward": 36,
+        "ideal_reward": 40,
+        "delta": 4,
+        "failed": {
+          "target_win": 1,
+          "craft_missing:obsidian_legs_armor": 1,
+          "equip_missing:obsidian_legs_armor": 1,
+          "craft_intermediate:obsidian": 1
+        },
+        "func_errors": [
+          {
+            "func": "craft",
+            "args": "('Hero', 'obsidian', 6)",
+            "kwargs": "{}",
+            "error_code": 500,
+            "message": {
+              "errors": {
+                "on_workshop_tile": true,
+                "needed_skill_level": true,
+                "enough_items_for_craft": false
+              },
+              "workshop": {
+                "needed": "(1, 5)",
+                "current": "(1, 5)"
+              },
+              "skill_level": {
+                "skill": "mining",
+                "needed": 30,
+                "current": 32
+              },
+              "missing_items": [
+                {
+                  "code": "piece_of_obsidian",
+                  "needed": 24,
+                  "got": 0
+                }
+              ]
+            }
+          },
+          {
+            "func": "equip",
+            "args": "('Hero', 'leg_armor', 'obsidian_legs_armor')",
+            "kwargs": "{}",
+            "error_code": 478,
+            "message": "Missing item or insufficient quantity."
+          }
+        ],
+        "logs_empty": false
+      }
+    ],
+    "9_Lich_kill": [
+      {
+        "sample": 0,
+        "outcome": "lose",
+        "win": false,
+        "reward": 36,
+        "ideal_reward": 40,
+        "delta": 4,
+        "failed": {
+          "target_win": 1,
+          "craft_missing:gold_shield": 1,
+          "equip_missing:gold_shield": 1,
+          "gather_resource:magical_cure": 1
+        },
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ],
+    "10_Bat_kill": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 35,
+        "ideal_reward": 35,
+        "delta": 0,
+        "failed": {},
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ],
+    "11_Cultist Emperor_kill": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 43,
+        "ideal_reward": 43,
+        "delta": 0,
+        "failed": {},
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ],
+    "12_Bat_kill": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 34,
+        "ideal_reward": 34,
+        "delta": 0,
+        "failed": {},
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ],
+    "13_Bat_kill": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 37,
+        "ideal_reward": 37,
+        "delta": 0,
+        "failed": {},
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ],
+    "14_Cultist Emperor_kill": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 44,
+        "ideal_reward": 44,
+        "delta": 0,
+        "failed": {},
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ],
+    "15_Bat_kill": [
+      {
+        "sample": 0,
+        "outcome": "lose",
+        "win": false,
+        "reward": 14,
+        "ideal_reward": 40,
+        "delta": 26,
+        "failed": {
+          "target_win": 1,
+          "other_monster:owlbear": 1,
+          "other_monster:ogre": 1,
+          "other_monster:vampire": 1,
+          "other_monster:cultist acolyte": 1,
+          "other_monster:skeleton": 1,
+          "other_monster:bandit lizard": 1,
+          "other_monster:imp": 1,
+          "craft_missing:gold_platebody": 1,
+          "equip_missing:gold_platebody": 1,
+          "craft_missing:greater_dreadful_staff": 1,
+          "equip_missing:greater_dreadful_staff": 1,
+          "craft_missing:strangold_legs_armor": 1,
+          "equip_missing:strangold_legs_armor": 1,
+          "craft_missing:sapphire_ring": 1,
+          "equip_missing:sapphire_ring": 1,
+          "craft_missing:greater_dreadful_amulet": 1,
+          "equip_missing:greater_dreadful_amulet": 1,
+          "craft_missing:lizard_boots": 1,
+          "equip_missing:lizard_boots": 1,
+          "craft_missing:topaz_ring": 1,
+          "equip_missing:topaz_ring": 1,
+          "craft_intermediate:strangold": 1,
+          "craft_intermediate:obsidian": 1,
+          "gather_resource:strange_ore": 1,
+          "gather_resource:diamond": 1
+        },
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ],
+    "16_Cultist Emperor_kill": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 39,
+        "ideal_reward": 39,
+        "delta": 0,
+        "failed": {},
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ],
+    "17_Bat_kill": [
+      {
+        "sample": 0,
+        "outcome": "lose",
+        "win": false,
+        "reward": 37,
+        "ideal_reward": 39,
+        "delta": 2,
+        "failed": {
+          "target_win": 1,
+          "equip_missing:gold_ring": 1
+        },
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ],
+    "18_Bat_kill": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 42,
+        "ideal_reward": 42,
+        "delta": 0,
+        "failed": {},
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ],
+    "19_Bat_kill": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 42,
+        "ideal_reward": 42,
+        "delta": 0,
+        "failed": {},
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ],
+    "20_Cultist Emperor_kill": [
+      {
+        "sample": 0,
+        "outcome": "win",
+        "win": true,
+        "reward": 39,
+        "ideal_reward": 39,
+        "delta": 0,
+        "failed": {},
+        "func_errors": [],
+        "logs_empty": false
+      }
+    ]
+  }
+}
