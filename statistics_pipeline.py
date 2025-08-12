@@ -487,7 +487,7 @@ def parse_args():
     # scoring args
     p.add_argument("--tasks_path", default="datasets/dataset_tasks.json")
     p.add_argument("--prompts_path", default="datasets/dataset_prompts.json")
-    p.add_argument("--code_logs_file", default='results/results_base/gpt-5_code_logs.json')
+    p.add_argument("--code_logs_file", default=None)
     p.add_argument("--code_logs_dir", default="results/results_base")
     p.add_argument("--output_dir", default="results/results_base_scoring")
     p.add_argument("--skip_existing", action="store_true")

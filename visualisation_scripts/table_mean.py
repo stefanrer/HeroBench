@@ -2,13 +2,13 @@ import json
 import os
 import numpy as np
 from pathlib import Path
+import csv  # <-- added
 
 try:
     REPO_ROOT = Path(__file__).resolve().parents[1]
 except NameError:
     REPO_ROOT = Path.cwd()
 
-# Repo root = one level up from this file (adjust if your layout differs)
 REPO_ROOT = Path(__file__).resolve().parents[1]
 
 PLOTS_DIR = REPO_ROOT / "results" / "plots_tables"
@@ -108,13 +108,25 @@ SCALING = 10000
 scaled_norm_success = [x * SCALING for x in norm_success]
 scaled_norm_score   = [x * SCALING for x in norm_score]
 
-# Sort by mean_success (low → high)
 summary_data = list(zip(
     model_names, mean_success, mean_score, mean_tokens,
     scaled_norm_success, scaled_norm_score
 ))
-summary_data.sort(key=lambda x: x[1])  # sort by mean_success
+summary_data.sort(key=lambda x: x[1])
 
+# ─── SAVE SUMMARY TO CSV ─────────────────────────────────────────────────────
+csv_path = PLOTS_DIR / "table_mean_hard.csv"
+with open(csv_path, mode="w", newline="", encoding="utf-8") as f:
+    writer = csv.writer(f)
+    writer.writerow([
+        "Model", "Mean Success", "Mean Score", "Mean Tokens",
+        f"Succ/{SCALING//1000}Tok", f"Sc/{SCALING//1000}Tok"
+    ])
+    writer.writerows(summary_data)
+
+print(f"\n[INFO] Summary table saved to: {csv_path}")
+
+# ─── PRINT SUMMARY ───────────────────────────────────────────────────────────
 print(f"Summary across difficulties:")
 print(f"{'Model':30}  {'Mean Succ':>9}  {'Mean Sc':>8}  {'Mean Tok':>9}  {'Succ/{0}Tok'.format(SCALING//1000):>11}  {'Sc/{0}Tok'.format(SCALING//1000):>9}")
 print("-" * 90)

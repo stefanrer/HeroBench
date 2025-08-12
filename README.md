@@ -242,10 +242,46 @@ HeroBench/
    uvicorn main:app --host 127.0.0.1 --port 8000
    ```
 
-### Interactive Demo
+### LLM Evaluation
 
-- Fill here
+To run the LLM evaluation, use the `scoring_pipeline.py` script.  
+We provide an **LLMService** that supports:
 
+- OpenAI API  
+- OpenRouter API  
+- Ollama  
+- HuggingFace (local models)  
+
+You will need to set the **task** and **prompt** file paths.
+
+This script will generate **three** files in the output directory:
+
+1. `<name>.json` – main results file.  
+2. `<name>_full_log.json` – full logged response from the model.  
+3. `<name>_code_logs.json` – extracted code from the LLM response plus logs from the environment.
+
+---
+
+### Results Visualization
+
+For visualizing results, use:
+
+- `visualisation_scripts/table_mean.py`  
+- `visualisation_scripts/plot_figures.py`  
+
+These scripts will save figures and tables to: results/plots_tables
+
+---
+
+### Error Type Analysis
+
+For additional analysis of error types, run `statistics_pipeline.py`.  
+The script takes the `<name>_code_logs.json` file from the input directory and outputs:
+
+1. `<name>_scores.json` – failure analysis for each task.  
+2. `<name>_stats.json` – mean analysis per difficulty and across all difficulties.
+
+To generate the resulting statistics table use visualisation_scripts/table_statistics.py
 
 
 ### Task Types
@@ -275,6 +311,14 @@ The virtual environment provides a comprehensive REST API for:
 - `GET /items` - List available items
 
 For complete API documentation, see [Virtual_Environment/README.md](Virtual_Environment/README.md).
+
+### Base vs Hard Results
+
+Results are divided into:
+
+- **Base** – from the standard datasets.  
+- **Hard** – from datasets with leveling mechanics and noise items.
+
 
 ## Contributing
 

@@ -162,9 +162,9 @@ def color_for(display_name: str):
     )
 
 # ─────────────────────────────────────────────────────────
-# Assign marker per model within each family  # <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+# Assign marker per model within each family  
 # ─────────────────────────────────────────────────────────
-# Use enough unique markers for models within a family
+
 FAMILY_MARKERS = [
     "o", "s", "^", "v", "D", "P", "X", "*", "p", "h", "<", ">", "8", "|", "_"
 ]
