@@ -2,7 +2,7 @@ import json
 import os
 
 from memory.name_formater import name_formater
-
+from pathlib import Path
 class CraftParser:
     """
     Parser for analyzing crafting chains and item acquisition information.
@@ -19,11 +19,11 @@ class CraftParser:
         Loads item, map, monster, and resource data from the source_jsons
         directory for use in crafting analysis.
         """
-        base_path = os.path.dirname(os.path.abspath(__file__))
-        items_data_path = f'{base_path}/source_jsons/items.json'
-        maps_data_path = f'{base_path}/source_jsons/maps.json'
-        monsters_data_path = f'{base_path}/source_jsons/monsters.json'
-        resources_data_path = f'{base_path}/source_jsons/resources.json'
+        base_path = Path('./memory/source_jsons').resolve()
+        items_data_path =  base_path / 'items.json'
+        maps_data_path = base_path / 'maps.json'
+        monsters_data_path = base_path / 'monsters.json'
+        resources_data_path = base_path /  'resources.json'
 
         with open(items_data_path, 'r') as data_file:
             self.items = json.load(data_file)

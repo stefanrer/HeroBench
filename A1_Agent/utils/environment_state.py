@@ -1,5 +1,5 @@
 import os
-
+from pathlib import Path
 from env_api.actions_executors import CharacterInfo
 from memory.available_items_craft import AvailableItems
 from utils.state_parse import character_state_parse
@@ -23,7 +23,7 @@ class EnvironmentState:
         self.character_info = CharacterInfo(character_name)
         self.available_items = AvailableItems(skill_cutout=True)
         self.maps = ''
-        maps_path = os.path.abspath(os.path.dirname(__file__)).replace("utils",f"memory{os.sep}MAPS.txt")
+        maps_path = Path('./memory/MAPS.txt').resolve()
         with open(maps_path, 'r') as f:
             self.maps = f.read()
 

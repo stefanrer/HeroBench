@@ -1,6 +1,6 @@
 import json
 import os
-
+from pathlib import Path
 
 class AvailableItems:
     """
@@ -19,10 +19,10 @@ class AvailableItems:
             skill_cutout: Whether to apply skill level filtering (default: True)
         """
         self.skills = ['weaponcrafting', 'gearcrafting', 'jewelrycrafting', 'cooking', 'mining', 'woodcutting', 'alchemy']
-        self.items_data_path = os.path.dirname(os.path.abspath(__file__))
+        self.items_data_path = Path('./memory/source_jsons/armor_weapon_db.json').resolve()
         self.no_items_message = 'No items currently available!'
         self.skill_cutout = skill_cutout
-        with open(self.items_data_path + '/source_jsons/armor_weapon_db.json') as f:
+        with open(self.items_data_path) as f:
             self.items = json.load(f)
 
     @staticmethod

@@ -1,6 +1,6 @@
 import datetime
 import os
-
+from pathlib import Path
 from loguru import logger
 
 
@@ -13,7 +13,7 @@ class AgentLogger:
     It supports both file logging and optional console output.
     """
 
-    LOG_DIRECTORY = './A1_Agent/agent_logs'
+    LOG_DIRECTORY = Path('./agent_logs').resolve()
 
     def __init__(self, console_verbose: bool = False) -> None:
         """
@@ -43,10 +43,8 @@ class AgentLogger:
         Creates the log directory if it doesn't exist and sets up
         the relative path for log file storage.
         """
-        base_path = os.path.dirname(os.path.abspath(__file__))
-        relative_path = os.path.relpath(self.LOG_DIRECTORY, base_path)
-        os.makedirs(relative_path, exist_ok=True)
-        self.log_directory = relative_path
+        os.makedirs(self.LOG_DIRECTORY, exist_ok=True)
+
 
     def start_logger(self) -> None:
         """
@@ -59,7 +57,7 @@ class AgentLogger:
         if self.log_started: return
         timestamp = datetime.datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
         file_name = f'{timestamp}.log'
-        file_path = os.path.join(self.log_directory, file_name)
+        file_path = self.LOG_DIRECTORY / file_name
         logger.remove()
         logger.add(file_path, format='[{time:HH:mm:ss}]: {message}')
         self.log_started = True

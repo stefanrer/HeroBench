@@ -89,7 +89,7 @@ def autotask_exec(task_json: dict, model: str, env_eval: bool) -> tuple[list,tup
             action_chain, checks = agent.run(task, eval_on_env=env_eval)
             completed = True
         except Exception as e:
-            #raise e
+            print(f'During agent work encountered unexpected error: \n {e}')
             current_attempts += 1
     if not completed:
         return [], (False,False), task_target

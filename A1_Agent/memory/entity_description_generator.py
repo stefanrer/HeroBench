@@ -1,10 +1,10 @@
 import json
 import os
-
+from pathlib import Path
 from memory.craft_parser import CraftParser, to_text
-
-MONSTERS_DATA_JSON_PATH = os.path.dirname(os.path.realpath(__file__)) + '/source_jsons/monsters.json'
-ITEMS_DATA_JSON_PATH = os.path.dirname(os.path.realpath(__file__)) + '/source_jsons/items.json'
+BASE_PATH = Path('./memory/source_jsons').resolve()
+MONSTERS_DATA_JSON_PATH = BASE_PATH / 'monsters.json'
+ITEMS_DATA_JSON_PATH = BASE_PATH / 'items.json'
 ITEMS_DATA_JSON = None
 MONSTERS_DATA_JSON = None
 
@@ -75,7 +75,7 @@ def get_monster_json(monster_name: str) -> dict:
     Returns:
         Dictionary containing monster data or empty dict if not found
     """
-    monster_path = os.path.dirname(os.path.realpath(__file__)) + '/source_jsons/monsters.json'
+    monster_path = Path('./memory/source_jsons/monsters.json').resolve()
     with open(monster_path, 'r') as f:
         monster_json = json.load(f)
         for monster in monster_json:
