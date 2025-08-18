@@ -114,22 +114,35 @@ Install dependencies for the environment server:
 pip install -r requirements.txt
 ```
 
-**Install Redis**
-   ```bash
-   # Ubuntu/Debian
-   sudo apt-get install redis-server
+#### Install Redis
+- Ubuntu/Debian
+   ````bash
    
-   # macOS
+   sudo apt-get install lsb-release curl gpg
+   curl -fsSL https://packages.redis.io/gpg | sudo gpg --dearmor -o /usr/share/keyrings/redis-archive-keyring.gpg
+   sudo chmod 644 /usr/share/keyrings/redis-archive-keyring.gpg
+   echo "deb [signed-by=/usr/share/keyrings/redis-archive-keyring.gpg] https://packages.redis.io/deb $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/redis.list
+   sudo apt-get update
+   sudo apt-get install redis
+   ````
+   Redis will start automatically, and it should restart at boot time. If Redis doesn't start across reboots, you may need to manually enable it:
+   ````bash
+   sudo systemctl enable redis-server
+   sudo systemctl start redis-server
+   ````
+- macOS
+   ````bash
    brew install redis
-   
-   # Windows
-   Download from https://redis.io/download
-   ```
-
-**Start Redis**
-   ```bash
+   ````
+  To test your Redis installation, you can run the redis-server executable from the command line:
+   ````bash
    redis-server
-   ```
+   ````
+  
+- Windows
+
+  https://redis.io/docs/latest/operate/oss_and_stack/install/archive/install-redis/install-redis-on-windows/
+
 
 ### Running the Environment
 
