@@ -123,7 +123,7 @@ pip install -r requirements.txt
    brew install redis
    
    # Windows
-   # Download from https://redis.io/download
+   Download from https://redis.io/download
    ```
 
 **Start Redis**
