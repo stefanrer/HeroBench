@@ -224,12 +224,14 @@ HeroBench is licensed under the MIT License.
 If you use HeroBench in your research, please cite:
 
 ```bibtex
-@article{HeroBench2025,
-  title={HeroBench: A Benchmark for Long-Horizon Planning and Structured Reasoning in Virtual Worlds},
-  author={Anokhin, Petr and Khalikov, Roman and Rebrikov, Stefan and Volkov, Viktor and Sorokin, Artyom and Bissonnette, Vincent},
-  journal={arXiv preprint:2508.12782},
-  year={2025},
-  url={https://arxiv.org/abs/2508.12782}
+@misc{anokhin2025herobenchbenchmarklonghorizonplanning,
+      title={HeroBench: A Benchmark for Long-Horizon Planning and Structured Reasoning in Virtual Worlds}, 
+      author={Petr Anokhin and Roman Khalikov and Stefan Rebrikov and Viktor Volkov and Artyom Sorokin and Vincent Bissonnette},
+      year={2025},
+      eprint={2508.12782},
+      archivePrefix={arXiv},
+      primaryClass={cs.AI},
+      url={https://arxiv.org/abs/2508.12782}, 
 }
 ```
 
